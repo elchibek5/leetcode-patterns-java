@@ -13,6 +13,6 @@ class Solution {
         if (exponent == 0) return 1;
 
         return (exponent % 2 == 0) ? myPow_(x * x, exponent / 2)
-                                   ? myPow_(x * x, exponent / 2) * x;
+                                   : myPow_(x * x, exponent / 2) * x;
     }
 }

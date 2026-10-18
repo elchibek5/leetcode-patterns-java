@@ -28,27 +28,27 @@ class Solution {
 }
 
 // SECOND SOLUTION
-class Solution {
-    public TreeNode invertTree(TreeNode root) {
-        if (root == null) return root;
-        Queue<TreeNode> q = new LinkedList<>();
-        q.offer(root);
+// class Solution {
+//     public TreeNode invertTree(TreeNode root) {
+//         if (root == null) return root;
+//         Queue<TreeNode> q = new LinkedList<>();
+//         q.offer(root);
         
-        while (!q.isEmpty()) {
-            TreeNode currentNode = q.poll();
-            TreeNode temp = currentNode.left;
-            currentNode.left = currentNode.right;
-            currentNode.right = temp;
+//         while (!q.isEmpty()) {
+//             TreeNode currentNode = q.poll();
+//             TreeNode temp = currentNode.left;
+//             currentNode.left = currentNode.right;
+//             currentNode.right = temp;
 
-            if (currentNode.left != null) {
-                q.offer(currentNode.left);
-            }
+//             if (currentNode.left != null) {
+//                 q.offer(currentNode.left);
+//             }
 
-            if (currentNode.right != null) {
-                q.offer(currentNode.right);
-            }
-        }
+//             if (currentNode.right != null) {
+//                 q.offer(currentNode.right);
+//             }
+//         }
         
-        return root;
-    }
-}
+//         return root;
+//     }
+// }
