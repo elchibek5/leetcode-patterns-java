@@ -235,7 +235,7 @@ Each row links the problem number to its page on LeetCode or Codeforces and the 
 
 | # | Problem | Difficulty | Key idea | Time | Space |
 |---|---|---|---|---|---|
-| [23](https://leetcode.com/problems/merge-k-sorted-lists/) | [Merge k Sorted Lists](LeetCode_Problems/Java/hard/0023.%20Merge%20KSorted%20Lists.java) | Hard | Seed a min-heap with every list head; pop the smallest node, append it, and push its successor. | O(N log k) | O(k) |
+| [23](https://leetcode.com/problems/merge-k-sorted-lists/) | [Merge k Sorted Lists](LeetCode_Problems/Java/hard/0023.%20Merge%20k%20Sorted%20Lists.java) | Hard | Seed a min-heap with every list head; pop the smallest node, append it, and push its successor. | O(N log k) | O(k) |
 | [295](https://leetcode.com/problems/find-median-from-data-stream/) | [Find Median from Data Stream](LeetCode_Problems/Java/hard/0295.%20Find%20Median%20from%20Data%20Stream.java) | Hard | A max-heap holds the lower half and a min-heap the upper; rebalance so the lower has equal or one more. | O(log n) add, O(1) median | O(n) |
 | [347](https://leetcode.com/problems/top-k-frequent-elements/) | [Top K Frequent Elements](LeetCode_Problems/Java/medium/0347.%20Top%20K%20Frequent%20Elements.java) | Medium | Count frequencies, keep a size-k min-heap by count, then pop it into the answer from the back. | O(n log k) | O(n) |
 | [451](https://leetcode.com/problems/sort-characters-by-frequency/) | [Sort Characters By Frequency](LeetCode_Problems/Java/medium/0451.%20Sort%20Characters%20By%20Frequency.java) | Medium | Count chars, push them into a max-heap ordered by count, then append each char count times as it pops. | O(n + k log k) | O(n) |

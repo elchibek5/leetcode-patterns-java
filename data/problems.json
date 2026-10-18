@@ -259,7 +259,7 @@
     "time": "O(N log k)",
     "space": "O(k)",
     "language": "Java",
-    "path": "LeetCode_Problems/Java/hard/0023. Merge KSorted Lists.java"
+    "path": "LeetCode_Problems/Java/hard/0023. Merge k Sorted Lists.java"
   },
   {
     "platform": "leetcode",
