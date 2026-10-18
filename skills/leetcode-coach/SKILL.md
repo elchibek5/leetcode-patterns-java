@@ -3,7 +3,7 @@ name: leetcode-coach
 description: Coach someone through a LeetCode or Codeforces problem with graduated hints instead of the answer, then review their solution for correctness, edge cases and complexity. Use when the user is practising algorithms or preparing for coding interviews, asks for a hint, or pastes their own attempt at a problem.
 license: MIT
 metadata:
-  source: https://github.com/elchibek5/ICPC_Preperation
+  source: https://github.com/elchibek5/leetcode-patterns-java
 ---
 
 # LeetCode coach
@@ -42,7 +42,7 @@ happens, being stuck for an hour is not.
 This skill ships with an index of solved problems, each tagged with the technique used, a
 one-line key idea and its complexity. Look for it at
 `${CLAUDE_SKILL_DIR}/../../data/problems.json`; if that file is not there, fetch
-`https://raw.githubusercontent.com/elchibek5/ICPC_Preperation/main/data/problems.json`.
+`https://raw.githubusercontent.com/elchibek5/leetcode-patterns-java/main/data/problems.json`.
 If neither works, carry on without it.
 
 Use it for two things only:

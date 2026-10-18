@@ -460,7 +460,7 @@ Each row links the problem number to its page on LeetCode or Codeforces and the 
 **Claude Code**
 
 ```text
-/plugin marketplace add elchibek5/ICPC_Preperation
+/plugin marketplace add elchibek5/leetcode-patterns-java
 /plugin install leetcode-coach@elchibek5-leetcode
 ```
 
@@ -469,8 +469,8 @@ Then ask, for example: `/leetcode-coach:leetcode-coach I'm stuck on 424, I tried
 **Codex and other agents**
 
 ```sh
-git clone https://github.com/elchibek5/ICPC_Preperation
-mkdir -p ~/.agents/skills && cp -r ICPC_Preperation/skills/leetcode-coach ~/.agents/skills/
+git clone https://github.com/elchibek5/leetcode-patterns-java
+mkdir -p ~/.agents/skills && cp -r leetcode-patterns-java/skills/leetcode-coach ~/.agents/skills/
 ```
 
 The skill reads the index from this repo when it is installed as a plugin, and from GitHub otherwise.
