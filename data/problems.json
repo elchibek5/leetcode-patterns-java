@@ -1,0 +1,5450 @@
+[
+  {
+    "platform": "leetcode",
+    "id": "1",
+    "title": "Two Sum",
+    "slug": "two-sum",
+    "url": "https://leetcode.com/problems/two-sum/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Hash Table"
+    ],
+    "pattern": "Arrays & Hashing",
+    "key_idea": "One pass with a value→index map; look up target − x before inserting x.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0001. Two Sum.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "2",
+    "title": "Add Two Numbers",
+    "slug": "add-two-numbers",
+    "url": "https://leetcode.com/problems/add-two-numbers/",
+    "difficulty": "Medium",
+    "tags": [
+      "Linked List",
+      "Math",
+      "Recursion"
+    ],
+    "pattern": "Linked List",
+    "key_idea": "Walk both lists digit by digit with a carry, appending each sum mod 10 to a dummy-headed result list.",
+    "time": "O(max(m, n))",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0002. Add Two Numbers.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "3",
+    "title": "Longest Substring Without Repeating Characters",
+    "slug": "longest-substring-without-repeating-characters",
+    "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+    "difficulty": "Medium",
+    "tags": [
+      "Hash Table",
+      "String",
+      "Sliding Window"
+    ],
+    "pattern": "Sliding Window",
+    "key_idea": "Grow the window rightward; while the new char is already in the set, drop chars from the left; track the widest window.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0003. Longest Substring Without Repeating Characters.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "7",
+    "title": "Reverse Integer",
+    "slug": "reverse-integer",
+    "url": "https://leetcode.com/problems/reverse-integer/",
+    "difficulty": "Medium",
+    "tags": [
+      "Math"
+    ],
+    "pattern": "Math",
+    "key_idea": "Pop the last digit and push it onto a long accumulator, returning 0 as soon as it leaves the int range.",
+    "time": "O(log x)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0007. Reverse Integer.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "9",
+    "title": "Palindrome Number",
+    "slug": "palindrome-number",
+    "url": "https://leetcode.com/problems/palindrome-number/",
+    "difficulty": "Easy",
+    "tags": [
+      "Math"
+    ],
+    "pattern": "Math",
+    "key_idea": "Write the digits in reverse order into a string and compare it with the number's own string.",
+    "time": "O(log x)",
+    "space": "O(log x)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0009. Palindrome Number.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "11",
+    "title": "Container With Most Water",
+    "slug": "container-with-most-water",
+    "url": "https://leetcode.com/problems/container-with-most-water/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Two Pointers",
+      "Greedy"
+    ],
+    "pattern": "Two Pointers",
+    "key_idea": "Start at both ends, record the area, then move the shorter wall inward because it caps the height.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0011. Container With Most Water.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "13",
+    "title": "Roman to Integer",
+    "slug": "roman-to-integer",
+    "url": "https://leetcode.com/problems/roman-to-integer/",
+    "difficulty": "Easy",
+    "tags": [
+      "Hash Table",
+      "Math",
+      "String"
+    ],
+    "pattern": "Strings",
+    "key_idea": "Add each symbol's value, but subtract it when the next symbol is larger.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0013. Roman to Integer.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "14",
+    "title": "Longest Common Prefix",
+    "slug": "longest-common-prefix",
+    "url": "https://leetcode.com/problems/longest-common-prefix/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "String",
+      "Trie"
+    ],
+    "pattern": "Strings",
+    "key_idea": "Take the first word as the prefix and trim its last char until every other word starts with it.",
+    "time": "O((n + m)·m^2)",
+    "space": "O(m)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0014. Longest Common Prefix.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "15",
+    "title": "3Sum",
+    "slug": "3sum",
+    "url": "https://leetcode.com/problems/3sum/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Two Pointers",
+      "Sorting"
+    ],
+    "pattern": "Two Pointers",
+    "key_idea": "Sort, fix each distinct anchor, then move two pointers inward toward a zero sum, skipping duplicate values.",
+    "time": "O(n^2)",
+    "space": "O(log n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0015. 3Sum.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "19",
+    "title": "Remove Nth Node From End of List",
+    "slug": "remove-nth-node-from-end-of-list",
+    "url": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
+    "difficulty": "Medium",
+    "tags": [
+      "Linked List",
+      "Two Pointers"
+    ],
+    "pattern": "Two Pointers",
+    "key_idea": "From a dummy node, move a fast pointer n + 1 steps ahead, advance both until fast ends, then unlink slow.next.",
+    "time": "O(sz)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0019. Remove Nth Node From End of List.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "20",
+    "title": "Valid Parentheses",
+    "slug": "valid-parentheses",
+    "url": "https://leetcode.com/problems/valid-parentheses/",
+    "difficulty": "Easy",
+    "tags": [
+      "String",
+      "Stack",
+      "Bracket Sequences"
+    ],
+    "pattern": "Stack",
+    "key_idea": "Push opening brackets; each closing bracket must match the top; the string is valid if the stack ends empty.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0020. Valid Parentheses.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "21",
+    "title": "Merge Two Sorted Lists",
+    "slug": "merge-two-sorted-lists",
+    "url": "https://leetcode.com/problems/merge-two-sorted-lists/",
+    "difficulty": "Easy",
+    "tags": [
+      "Linked List",
+      "Recursion"
+    ],
+    "pattern": "Linked List",
+    "key_idea": "Splice the smaller head onto a dummy tail until one list runs out, then attach the remainder.",
+    "time": "O(m + n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0021. Merge Two Sorted Lists.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "22",
+    "title": "Generate Parentheses",
+    "slug": "generate-parentheses",
+    "url": "https://leetcode.com/problems/generate-parentheses/",
+    "difficulty": "Medium",
+    "tags": [
+      "String",
+      "Dynamic Programming",
+      "Backtracking",
+      "Bracket Sequences"
+    ],
+    "pattern": "Backtracking",
+    "key_idea": "Build strings char by char, adding '(' while fewer than n are open and ')' while it stays balanced.",
+    "time": "O(n·4^n / √n)",
+    "space": "O(n^2)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0022. Generate Parentheses.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "23",
+    "title": "Merge k Sorted Lists",
+    "slug": "merge-k-sorted-lists",
+    "url": "https://leetcode.com/problems/merge-k-sorted-lists/",
+    "difficulty": "Hard",
+    "tags": [
+      "Linked List",
+      "Divide and Conquer",
+      "Heap (Priority Queue)",
+      "Merge Sort",
+      "Tournament Sort"
+    ],
+    "pattern": "Heap / Priority Queue",
+    "key_idea": "Seed a min-heap with every list head; pop the smallest node, append it, and push its successor.",
+    "time": "O(N log k)",
+    "space": "O(k)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/hard/0023. Merge KSorted Lists.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "24",
+    "title": "Swap Nodes in Pairs",
+    "slug": "swap-nodes-in-pairs",
+    "url": "https://leetcode.com/problems/swap-nodes-in-pairs/",
+    "difficulty": "Medium",
+    "tags": [
+      "Linked List",
+      "Recursion"
+    ],
+    "pattern": "Linked List",
+    "key_idea": "From a dummy node, rewire each pair A→B into B→A→rest, then step past the pair.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0024. Swap Nodes in Pairs.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "25",
+    "title": "Reverse Nodes in k-Group",
+    "slug": "reverse-nodes-in-k-group",
+    "url": "https://leetcode.com/problems/reverse-nodes-in-k-group/",
+    "difficulty": "Hard",
+    "tags": [
+      "Linked List",
+      "Recursion"
+    ],
+    "pattern": "Linked List",
+    "key_idea": "Find each group's k-th node; if it exists, reverse the group in place and splice it after the previous group.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/hard/0025. Reverse Nodes in k Group.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "26",
+    "title": "Remove Duplicates from Sorted Array",
+    "slug": "remove-duplicates-from-sorted-array",
+    "url": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Two Pointers"
+    ],
+    "pattern": "Two Pointers",
+    "key_idea": "A write index keeps one copy of each value, copying nums[i] only when it differs from nums[i − 1].",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0026. Remove Duplicates from Sorted Array.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "27",
+    "title": "Remove Element",
+    "slug": "remove-element",
+    "url": "https://leetcode.com/problems/remove-element/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Two Pointers"
+    ],
+    "pattern": "Two Pointers",
+    "key_idea": "Copy every element that is not val forward to a write index; the index is the new length.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0027. Remove Element.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "32",
+    "title": "Longest Valid Parentheses",
+    "slug": "longest-valid-parentheses",
+    "url": "https://leetcode.com/problems/longest-valid-parentheses/",
+    "difficulty": "Hard",
+    "tags": [
+      "String",
+      "Dynamic Programming",
+      "Stack",
+      "Bracket Sequences"
+    ],
+    "pattern": "Stack",
+    "key_idea": "Stack indices over a -1 base; on ')' pop, then measure from the new top, or make i the base if empty.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/hard/0032. Longest Valid Parentheses.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "37",
+    "title": "Sudoku Solver",
+    "slug": "sudoku-solver",
+    "url": "https://leetcode.com/problems/sudoku-solver/",
+    "difficulty": "Hard",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Backtracking",
+      "Matrix",
+      "Algorithm X",
+      "Dancing Links"
+    ],
+    "pattern": "Backtracking",
+    "key_idea": "Fill the first empty cell with each digit valid for its row, column and box; recurse and undo on failure.",
+    "time": "O(9^m)",
+    "space": "O(m)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/hard/0037. Sudoku Solver.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "42",
+    "title": "Trapping Rain Water",
+    "slug": "trapping-rain-water",
+    "url": "https://leetcode.com/problems/trapping-rain-water/",
+    "difficulty": "Hard",
+    "tags": [
+      "Array",
+      "Two Pointers",
+      "Dynamic Programming",
+      "Stack",
+      "Monotonic Stack"
+    ],
+    "pattern": "Two Pointers",
+    "key_idea": "Move the lower side inward, tracking its running max; water above a bar is that max minus its height.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/hard/0042. Trapping Rain Water.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "45",
+    "title": "Jump Game II",
+    "slug": "jump-game-ii",
+    "url": "https://leetcode.com/problems/jump-game-ii/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Dynamic Programming",
+      "Greedy"
+    ],
+    "pattern": "Greedy",
+    "key_idea": "Treat reach as BFS levels: track the farthest jump, and when i hits the current level's end, jump and extend it.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0045. Jump Game II.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "46",
+    "title": "Permutations",
+    "slug": "permutations",
+    "url": "https://leetcode.com/problems/permutations/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Backtracking"
+    ],
+    "pattern": "Backtracking",
+    "key_idea": "Extend the current list with each number not already in it, recurse, then remove it.",
+    "time": "O(n^2·n!)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0046. Permutations.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "48",
+    "title": "Rotate Image",
+    "slug": "rotate-image",
+    "url": "https://leetcode.com/problems/rotate-image/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Math",
+      "Matrix"
+    ],
+    "pattern": "Math",
+    "key_idea": "Transpose across the main diagonal, then reverse each row; together they rotate the matrix 90° clockwise.",
+    "time": "O(n^2)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0048. Rotate Image.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "49",
+    "title": "Group Anagrams",
+    "slug": "group-anagrams",
+    "url": "https://leetcode.com/problems/group-anagrams/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "String",
+      "Sorting"
+    ],
+    "pattern": "Arrays & Hashing",
+    "key_idea": "Sort each word's letters to form a key and group the words by key in a hash map.",
+    "time": "O(n·k log k)",
+    "space": "O(n·k)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0049. Group Anagrams.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "50",
+    "title": "Pow(x, n)",
+    "slug": "powx-n",
+    "url": "https://leetcode.com/problems/powx-n/",
+    "difficulty": "Medium",
+    "tags": [
+      "Math",
+      "Recursion"
+    ],
+    "pattern": "Math",
+    "key_idea": "Fast exponentiation: square x and halve the exponent, multiplying in one extra x when it is odd; negative n uses 1/x.",
+    "time": "O(log n)",
+    "space": "O(log n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0050. Pow(x, n).java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "51",
+    "title": "N-Queens",
+    "slug": "n-queens",
+    "url": "https://leetcode.com/problems/n-queens/",
+    "difficulty": "Hard",
+    "tags": [
+      "Array",
+      "Backtracking",
+      "Algorithm X"
+    ],
+    "pattern": "Backtracking",
+    "key_idea": "Place one queen per row, skipping columns and both diagonals already marked in boolean arrays, then unmark.",
+    "time": "O(n·n!)",
+    "space": "O(n^2)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/hard/0051. NQueens.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "54",
+    "title": "Spiral Matrix",
+    "slug": "spiral-matrix",
+    "url": "https://leetcode.com/problems/spiral-matrix/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Matrix",
+      "Simulation"
+    ],
+    "pattern": "Simulation",
+    "key_idea": "Walk the top, right, bottom and left edges, shrinking each bound after its edge and stopping when bounds cross.",
+    "time": "O(m·n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0054. Spiral Matrix.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "55",
+    "title": "Jump Game",
+    "slug": "jump-game",
+    "url": "https://leetcode.com/problems/jump-game/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Dynamic Programming",
+      "Greedy"
+    ],
+    "pattern": "Greedy",
+    "key_idea": "Track the farthest reachable index; fail if i ever passes it, succeed once it covers the last index.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0055. Jump Game.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "56",
+    "title": "Merge Intervals",
+    "slug": "merge-intervals",
+    "url": "https://leetcode.com/problems/merge-intervals/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Sorting",
+      "Quicksort"
+    ],
+    "pattern": "Intervals",
+    "key_idea": "Sort by start; extend the last merged interval while the next overlaps it, otherwise start a new one.",
+    "time": "O(n log n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0056. Merge Intervals.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "57",
+    "title": "Insert Interval",
+    "slug": "insert-interval",
+    "url": "https://leetcode.com/problems/insert-interval/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array"
+    ],
+    "pattern": "Intervals",
+    "key_idea": "Copy intervals that end before the new one, absorb every overlapping interval into it, then copy the rest.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0057. Insert Interval.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "61",
+    "title": "Rotate List",
+    "slug": "rotate-list",
+    "url": "https://leetcode.com/problems/rotate-list/",
+    "difficulty": "Medium",
+    "tags": [
+      "Linked List",
+      "Two Pointers"
+    ],
+    "pattern": "Linked List",
+    "key_idea": "Measure the length, close the list into a ring, then cut it after node number length − (k mod length).",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0061. Rotate List.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "67",
+    "title": "Add Binary",
+    "slug": "add-binary",
+    "url": "https://leetcode.com/problems/add-binary/",
+    "difficulty": "Easy",
+    "tags": [
+      "Math",
+      "String",
+      "Bit Manipulation",
+      "Simulation"
+    ],
+    "pattern": "Math",
+    "key_idea": "Add digits from the right with a carry, appending sum mod 2, then reverse the built string.",
+    "time": "O(max(m, n))",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0067. Add Binary.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "69",
+    "title": "Sqrt(x)",
+    "slug": "sqrtx",
+    "url": "https://leetcode.com/problems/sqrtx/",
+    "difficulty": "Easy",
+    "tags": [
+      "Math",
+      "Binary Search",
+      "Newton's Method"
+    ],
+    "pattern": "Binary Search",
+    "key_idea": "Binary search 0..x for the largest mid whose square, computed as a long, is at most x.",
+    "time": "O(log x)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0069. Sqrt(x).java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "75",
+    "title": "Sort Colors",
+    "slug": "sort-colors",
+    "url": "https://leetcode.com/problems/sort-colors/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Two Pointers",
+      "Sorting",
+      "Quicksort",
+      "Bubble Sort"
+    ],
+    "pattern": "Two Pointers",
+    "key_idea": "Dutch national flag: a cursor swaps 0s down to the low pointer and 2s up to the high pointer, skipping 1s.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0075. Sort Colors.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "77",
+    "title": "Combinations",
+    "slug": "combinations",
+    "url": "https://leetcode.com/problems/combinations/",
+    "difficulty": "Medium",
+    "tags": [
+      "Backtracking"
+    ],
+    "pattern": "Backtracking",
+    "key_idea": "Choose numbers in increasing order from start to n, recurse with k − 1 left, then undo the choice.",
+    "time": "O(k·C(n, k))",
+    "space": "O(k)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0077. Combinations.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "80",
+    "title": "Remove Duplicates from Sorted Array II",
+    "slug": "remove-duplicates-from-sorted-array-ii",
+    "url": "https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Two Pointers"
+    ],
+    "pattern": "Two Pointers",
+    "key_idea": "Write nums[i] only when it differs from the value two slots behind the write index, keeping at most two copies.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0080. Remove Duplicates from Sorted Array II.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "84",
+    "title": "Largest Rectangle in Histogram",
+    "slug": "largest-rectangle-in-histogram",
+    "url": "https://leetcode.com/problems/largest-rectangle-in-histogram/",
+    "difficulty": "Hard",
+    "tags": [
+      "Array",
+      "Stack",
+      "Monotonic Stack",
+      "Range Minimum/Maximum Query"
+    ],
+    "pattern": "Dynamic Programming",
+    "key_idea": "For each bar, find the nearest shorter bar on each side by jumping through boundaries already computed; area = height × gap.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/hard/0084. Largest Rectanglein Histogram.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "86",
+    "title": "Partition List",
+    "slug": "partition-list",
+    "url": "https://leetcode.com/problems/partition-list/",
+    "difficulty": "Medium",
+    "tags": [
+      "Linked List",
+      "Two Pointers"
+    ],
+    "pattern": "Linked List",
+    "key_idea": "Route nodes into two dummy-headed lists, below x and at least x, then join them and cut the tail.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0086. Partition List.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "88",
+    "title": "Merge Sorted Array",
+    "slug": "merge-sorted-array",
+    "url": "https://leetcode.com/problems/merge-sorted-array/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Two Pointers",
+      "Sorting"
+    ],
+    "pattern": "Two Pointers",
+    "key_idea": "Fill nums1 from the back, taking the larger of the two tails until nums2 is used up.",
+    "time": "O(m + n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0088. Merge Sorted Array.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "92",
+    "title": "Reverse Linked List II",
+    "slug": "reverse-linked-list-ii",
+    "url": "https://leetcode.com/problems/reverse-linked-list-ii/",
+    "difficulty": "Medium",
+    "tags": [
+      "Linked List"
+    ],
+    "pattern": "Linked List",
+    "key_idea": "Walk to the node before left, then repeatedly move the node after the sublist's tail to the sublist's front.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0092. Reverse Linked List II.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "98",
+    "title": "Validate Binary Search Tree",
+    "slug": "validate-binary-search-tree",
+    "url": "https://leetcode.com/problems/validate-binary-search-tree/",
+    "difficulty": "Medium",
+    "tags": [
+      "Tree",
+      "Depth-First Search",
+      "Binary Search Tree",
+      "Binary Tree"
+    ],
+    "pattern": "Trees",
+    "key_idea": "Recurse with an open (min, max) range kept as longs; every node must lie strictly inside its range.",
+    "time": "O(n)",
+    "space": "O(h)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0098. Validate Binary Search Tree.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "101",
+    "title": "Symmetric Tree",
+    "slug": "symmetric-tree",
+    "url": "https://leetcode.com/problems/symmetric-tree/",
+    "difficulty": "Easy",
+    "tags": [
+      "Tree",
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Binary Tree"
+    ],
+    "pattern": "Trees",
+    "key_idea": "Compare the two subtrees as mirrors: equal values, outer children mirror each other, inner children mirror each other.",
+    "time": "O(n)",
+    "space": "O(h)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0101. Symmetric Tree.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "102",
+    "title": "Binary Tree Level Order Traversal",
+    "slug": "binary-tree-level-order-traversal",
+    "url": "https://leetcode.com/problems/binary-tree-level-order-traversal/",
+    "difficulty": "Medium",
+    "tags": [
+      "Tree",
+      "Breadth-First Search",
+      "Binary Tree"
+    ],
+    "pattern": "Trees",
+    "key_idea": "BFS with a queue, draining exactly the current queue size each round to collect one level.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0102. Binary Tree Level Order Traversal.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "103",
+    "title": "Binary Tree Zigzag Level Order Traversal",
+    "slug": "binary-tree-zigzag-level-order-traversal",
+    "url": "https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/",
+    "difficulty": "Medium",
+    "tags": [
+      "Tree",
+      "Breadth-First Search",
+      "Binary Tree"
+    ],
+    "pattern": "Trees",
+    "key_idea": "Level-order BFS that inserts values at the front of the level list on every other level.",
+    "time": "O(n^2)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0103. Binary Tree Zigzag Level Order Traversal.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "104",
+    "title": "Maximum Depth of Binary Tree",
+    "slug": "maximum-depth-of-binary-tree",
+    "url": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
+    "difficulty": "Easy",
+    "tags": [
+      "Tree",
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Binary Tree"
+    ],
+    "pattern": "Trees",
+    "key_idea": "Depth is 1 plus the larger depth of the two subtrees; an empty tree has depth 0.",
+    "time": "O(n)",
+    "space": "O(h)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0104. Maximum Depth of Binary Tree.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "105",
+    "title": "Construct Binary Tree from Preorder and Inorder Traversal",
+    "slug": "construct-binary-tree-from-preorder-and-inorder-traversal",
+    "url": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Divide and Conquer",
+      "Tree",
+      "Binary Tree"
+    ],
+    "pattern": "Trees",
+    "key_idea": "Preorder's first value is the root; its inorder index, from a value→index map, splits both ranges into subtrees.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0105. Construct Binary Tree from Preorder and Inorder Traversal.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "107",
+    "title": "Binary Tree Level Order Traversal II",
+    "slug": "binary-tree-level-order-traversal-ii",
+    "url": "https://leetcode.com/problems/binary-tree-level-order-traversal-ii/",
+    "difficulty": "Medium",
+    "tags": [
+      "Tree",
+      "Breadth-First Search",
+      "Binary Tree"
+    ],
+    "pattern": "Trees",
+    "key_idea": "Level-order BFS that inserts each finished level at the front of the result list.",
+    "time": "O(n^2)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0107. Binary Tree Level Order Traversal II.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "110",
+    "title": "Balanced Binary Tree",
+    "slug": "balanced-binary-tree",
+    "url": "https://leetcode.com/problems/balanced-binary-tree/",
+    "difficulty": "Easy",
+    "tags": [
+      "Tree",
+      "Depth-First Search",
+      "Binary Tree"
+    ],
+    "pattern": "Trees",
+    "key_idea": "Post-order DFS returns each subtree's height and flags imbalance when child heights differ by more than 1.",
+    "time": "O(n)",
+    "space": "O(h)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0110. Balanced Binary Tree.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "112",
+    "title": "Path Sum",
+    "slug": "path-sum",
+    "url": "https://leetcode.com/problems/path-sum/",
+    "difficulty": "Easy",
+    "tags": [
+      "Tree",
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Binary Tree"
+    ],
+    "pattern": "Trees",
+    "key_idea": "Subtract each node's value on the way down; a leaf succeeds when the remaining sum is zero.",
+    "time": "O(n)",
+    "space": "O(h)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0112. Path Sum.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "113",
+    "title": "Path Sum II",
+    "slug": "path-sum-ii",
+    "url": "https://leetcode.com/problems/path-sum-ii/",
+    "difficulty": "Medium",
+    "tags": [
+      "Backtracking",
+      "Tree",
+      "Depth-First Search",
+      "Binary Tree"
+    ],
+    "pattern": "Trees",
+    "key_idea": "DFS keeping the root-to-node path; copy it at leaves matching the remaining sum, then remove the node on return.",
+    "time": "O(n·h)",
+    "space": "O(h)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0113. Path Sum II.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "118",
+    "title": "Pascal's Triangle",
+    "slug": "pascals-triangle",
+    "url": "https://leetcode.com/problems/pascals-triangle/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Dynamic Programming"
+    ],
+    "pattern": "Dynamic Programming",
+    "key_idea": "Each row starts and ends with 1; every inner entry is the sum of the two entries above it.",
+    "time": "O(numRows^2)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0118. Pascal's Triangle.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "121",
+    "title": "Best Time to Buy and Sell Stock",
+    "slug": "best-time-to-buy-and-sell-stock",
+    "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Dynamic Programming"
+    ],
+    "pattern": "Greedy",
+    "key_idea": "Track the lowest price so far and the best profit from selling at today's price.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0121. Best Time to Buy and Sell Stock.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "122",
+    "title": "Best Time to Buy and Sell Stock II",
+    "slug": "best-time-to-buy-and-sell-stock-ii",
+    "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Dynamic Programming",
+      "Greedy"
+    ],
+    "pattern": "Greedy",
+    "key_idea": "Find each local valley and the peak after it, adding every valley-to-peak rise to the profit.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0122. Best Time to Buy and Sell Stock II.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "125",
+    "title": "Valid Palindrome",
+    "slug": "valid-palindrome",
+    "url": "https://leetcode.com/problems/valid-palindrome/",
+    "difficulty": "Easy",
+    "tags": [
+      "Two Pointers",
+      "String"
+    ],
+    "pattern": "Two Pointers",
+    "key_idea": "Move pointers inward from both ends, skipping non-alphanumerics, and compare chars case-insensitively.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0125. Valid Palindrome.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "128",
+    "title": "Longest Consecutive Sequence",
+    "slug": "longest-consecutive-sequence",
+    "url": "https://leetcode.com/problems/longest-consecutive-sequence/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Union-Find"
+    ],
+    "pattern": "Arrays & Hashing",
+    "key_idea": "Put every number in a set; from each number with no predecessor, count upward while the next number exists.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0128. Longest Consecutive Sequence.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "134",
+    "title": "Gas Station",
+    "slug": "gas-station",
+    "url": "https://leetcode.com/problems/gas-station/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Greedy"
+    ],
+    "pattern": "Greedy",
+    "key_idea": "When the running tank goes negative, restart after that station; a non-negative total surplus means that start works.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0134. Gas Station.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "136",
+    "title": "Single Number",
+    "slug": "single-number",
+    "url": "https://leetcode.com/problems/single-number/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Bit Manipulation"
+    ],
+    "pattern": "Bit Manipulation",
+    "key_idea": "XOR all numbers; equal pairs cancel to zero, leaving the single one.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0136. Single Number.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "141",
+    "title": "Linked List Cycle",
+    "slug": "linked-list-cycle",
+    "url": "https://leetcode.com/problems/linked-list-cycle/",
+    "difficulty": "Easy",
+    "tags": [
+      "Hash Table",
+      "Linked List",
+      "Two Pointers",
+      "Floyd's Cycle Finding Algorithm"
+    ],
+    "pattern": "Two Pointers",
+    "key_idea": "Floyd's tortoise and hare: a pointer moving two steps meets the one-step pointer only if there is a cycle.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0141. Linked List Cycle.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "142",
+    "title": "Linked List Cycle II",
+    "slug": "linked-list-cycle-ii",
+    "url": "https://leetcode.com/problems/linked-list-cycle-ii/",
+    "difficulty": "Medium",
+    "tags": [
+      "Hash Table",
+      "Linked List",
+      "Two Pointers",
+      "Floyd's Cycle Finding Algorithm"
+    ],
+    "pattern": "Two Pointers",
+    "key_idea": "Once fast and slow meet, restart slow at the head; stepping both singly, they meet at the cycle start.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0142. Linked List Cycle II.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "143",
+    "title": "Reorder List",
+    "slug": "reorder-list",
+    "url": "https://leetcode.com/problems/reorder-list/",
+    "difficulty": "Medium",
+    "tags": [
+      "Linked List",
+      "Two Pointers",
+      "Stack",
+      "Recursion"
+    ],
+    "pattern": "Linked List",
+    "key_idea": "Find the middle with slow and fast pointers, reverse the second half, then interleave the two halves.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0143. Reorder List.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "147",
+    "title": "Insertion Sort List",
+    "slug": "insertion-sort-list",
+    "url": "https://leetcode.com/problems/insertion-sort-list/",
+    "difficulty": "Medium",
+    "tags": [
+      "Linked List",
+      "Sorting"
+    ],
+    "pattern": "Sorting",
+    "key_idea": "Insert each node into a sorted list behind a dummy, scanning from the front for its position.",
+    "time": "O(n^2)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0147. Insertion Sort List.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "150",
+    "title": "Evaluate Reverse Polish Notation",
+    "slug": "evaluate-reverse-polish-notation",
+    "url": "https://leetcode.com/problems/evaluate-reverse-polish-notation/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Math",
+      "Stack"
+    ],
+    "pattern": "Stack",
+    "key_idea": "Push numbers; on an operator pop two operands, apply it with the earlier operand on the left, and push the result.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0150. Evaluate Reverse Polish Notation.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "153",
+    "title": "Find Minimum in Rotated Sorted Array",
+    "slug": "find-minimum-in-rotated-sorted-array",
+    "url": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Binary Search"
+    ],
+    "pattern": "Binary Search",
+    "key_idea": "If nums[mid] > nums[r] the minimum lies right of mid, otherwise at mid or left of it; shrink until l meets r.",
+    "time": "O(log n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0153. Find Minimum in Rotated Sorted Array.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "154",
+    "title": "Find Minimum in Rotated Sorted Array II",
+    "slug": "find-minimum-in-rotated-sorted-array-ii",
+    "url": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/",
+    "difficulty": "Hard",
+    "tags": [
+      "Array",
+      "Binary Search"
+    ],
+    "pattern": "Binary Search",
+    "key_idea": "Rotated-array binary search against nums[r]; when nums[mid] equals nums[r], drop r by one because duplicates hide the side.",
+    "time": "O(log n), O(n) worst",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/hard/0154. Find Minimum in Rotated Sorted Array II.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "155",
+    "title": "Min Stack",
+    "slug": "min-stack",
+    "url": "https://leetcode.com/problems/min-stack/",
+    "difficulty": "Medium",
+    "tags": [
+      "Stack",
+      "Design"
+    ],
+    "pattern": "Design",
+    "key_idea": "A hand-rolled linked stack whose every node stores its value and the minimum of everything beneath it.",
+    "time": "O(1) per operation",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0155. Min Stack.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "160",
+    "title": "Intersection of Two Linked Lists",
+    "slug": "intersection-of-two-linked-lists",
+    "url": "https://leetcode.com/problems/intersection-of-two-linked-lists/",
+    "difficulty": "Easy",
+    "tags": [
+      "Hash Table",
+      "Linked List",
+      "Two Pointers"
+    ],
+    "pattern": "Two Pointers",
+    "key_idea": "One pointer walks A then B, the other B then A; equal total distance makes them meet at the intersection or null.",
+    "time": "O(m + n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0160. Intersection of Two Linked Lists.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "167",
+    "title": "Two Sum II - Input Array Is Sorted",
+    "slug": "two-sum-ii-input-array-is-sorted",
+    "url": "https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Two Pointers",
+      "Binary Search"
+    ],
+    "pattern": "Two Pointers",
+    "key_idea": "Pointers at both ends: move left up when the sum is too small and right down when it is too large.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0167. Two Sum II - Input Array Is Sorted.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "169",
+    "title": "Majority Element",
+    "slug": "majority-element",
+    "url": "https://leetcode.com/problems/majority-element/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Divide and Conquer",
+      "Sorting",
+      "Counting",
+      "Boyer–Moore Majority Vote Algorithm"
+    ],
+    "pattern": "Arrays & Hashing",
+    "key_idea": "Boyer-Moore voting: keep a candidate and a counter, +1 on a match and −1 otherwise, replacing the candidate at zero.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0169. Majority Element.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "189",
+    "title": "Rotate Array",
+    "slug": "rotate-array",
+    "url": "https://leetcode.com/problems/rotate-array/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Math",
+      "Two Pointers"
+    ],
+    "pattern": "Two Pointers",
+    "key_idea": "Reverse the whole array, then reverse the first k elements and the remaining n − k elements.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0189. Rotate Array.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "190",
+    "title": "Reverse Bits",
+    "slug": "reverse-bits",
+    "url": "https://leetcode.com/problems/reverse-bits/",
+    "difficulty": "Easy",
+    "tags": [
+      "Divide and Conquer",
+      "Bit Manipulation"
+    ],
+    "pattern": "Bit Manipulation",
+    "key_idea": "For every set bit i of n, set bit 31 − i of the result.",
+    "time": "O(1)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0190. Reverse Bits.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "191",
+    "title": "Number of 1 Bits",
+    "slug": "number-of-1-bits",
+    "url": "https://leetcode.com/problems/number-of-1-bits/",
+    "difficulty": "Easy",
+    "tags": [
+      "Divide and Conquer",
+      "Bit Manipulation"
+    ],
+    "pattern": "Bit Manipulation",
+    "key_idea": "Test bits 0 to 30 with a shifting mask and count the set ones.",
+    "time": "O(1)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0191. Number of 1 Bits.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "199",
+    "title": "Binary Tree Right Side View",
+    "slug": "binary-tree-right-side-view",
+    "url": "https://leetcode.com/problems/binary-tree-right-side-view/",
+    "difficulty": "Medium",
+    "tags": [
+      "Tree",
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Binary Tree"
+    ],
+    "pattern": "Trees",
+    "key_idea": "Level-order BFS that keeps the last node of each level.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0199. Binary Tree Right Side View.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "202",
+    "title": "Happy Number",
+    "slug": "happy-number",
+    "url": "https://leetcode.com/problems/happy-number/",
+    "difficulty": "Easy",
+    "tags": [
+      "Hash Table",
+      "Math",
+      "Two Pointers",
+      "Floyd's Cycle Finding Algorithm"
+    ],
+    "pattern": "Two Pointers",
+    "key_idea": "Floyd cycle detection on the digit-square-sum sequence; stop when fast reaches 1 or meets slow.",
+    "time": "O(log n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0202. Happy Number.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "203",
+    "title": "Remove Linked List Elements",
+    "slug": "remove-linked-list-elements",
+    "url": "https://leetcode.com/problems/remove-linked-list-elements/",
+    "difficulty": "Easy",
+    "tags": [
+      "Linked List",
+      "Recursion"
+    ],
+    "pattern": "Linked List",
+    "key_idea": "Recursively clean the rest of the list first, then skip the current node if it holds val.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0203. Remove Linked List Elements.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "206",
+    "title": "Reverse Linked List",
+    "slug": "reverse-linked-list",
+    "url": "https://leetcode.com/problems/reverse-linked-list/",
+    "difficulty": "Easy",
+    "tags": [
+      "Linked List",
+      "Recursion"
+    ],
+    "pattern": "Linked List",
+    "key_idea": "Recursively point each node back at its predecessor and return the old tail as the new head.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0206. Reverse Linked List.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "215",
+    "title": "Kth Largest Element in an Array",
+    "slug": "kth-largest-element-in-an-array",
+    "url": "https://leetcode.com/problems/kth-largest-element-in-an-array/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Divide and Conquer",
+      "Sorting",
+      "Heap (Priority Queue)",
+      "Quickselect"
+    ],
+    "pattern": "Sorting",
+    "key_idea": "Sort the whole array with randomized quicksort that skips runs equal to the pivot, then read index n − k.",
+    "time": "O(n log n) expected",
+    "space": "O(log n) expected",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0215. Kth Largest Element in an Array.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "219",
+    "title": "Contains Duplicate II",
+    "slug": "contains-duplicate-ii",
+    "url": "https://leetcode.com/problems/contains-duplicate-ii/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Sliding Window"
+    ],
+    "pattern": "Arrays & Hashing",
+    "key_idea": "Map each value to its last index; seeing it again within k of that index means true.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0219. Contains Duplicate II.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "225",
+    "title": "Implement Stack using Queues",
+    "slug": "implement-stack-using-queues",
+    "url": "https://leetcode.com/problems/implement-stack-using-queues/",
+    "difficulty": "Easy",
+    "tags": [
+      "Stack",
+      "Design",
+      "Queue"
+    ],
+    "pattern": "Design",
+    "key_idea": "Wraps java.util.Stack directly, delegating push, pop, top and empty to it instead of using queues.",
+    "time": "O(1) per operation",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0225. Implement Stack using Queues.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "226",
+    "title": "Invert Binary Tree",
+    "slug": "invert-binary-tree",
+    "url": "https://leetcode.com/problems/invert-binary-tree/",
+    "difficulty": "Easy",
+    "tags": [
+      "Tree",
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Binary Tree"
+    ],
+    "pattern": "Trees",
+    "key_idea": "Recursively invert both subtrees, then swap them.",
+    "time": "O(n)",
+    "space": "O(h)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0226. Invert Binary Tree.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "229",
+    "title": "Majority Element II",
+    "slug": "majority-element-ii",
+    "url": "https://leetcode.com/problems/majority-element-ii/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Sorting",
+      "Counting",
+      "Boyer–Moore Majority Vote Algorithm"
+    ],
+    "pattern": "Arrays & Hashing",
+    "key_idea": "Boyer-Moore voting with two candidates and counters, then a second pass checks each appears more than n/3 times.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0229. Majority Element II.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "231",
+    "title": "Power of Two",
+    "slug": "power-of-two",
+    "url": "https://leetcode.com/problems/power-of-two/",
+    "difficulty": "Easy",
+    "tags": [
+      "Math",
+      "Bit Manipulation",
+      "Recursion"
+    ],
+    "pattern": "Math",
+    "key_idea": "Halve n while it is even; it is a power of two only if it reaches exactly 1.",
+    "time": "O(log n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0231. Power of Two.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "232",
+    "title": "Implement Queue using Stacks",
+    "slug": "implement-queue-using-stacks",
+    "url": "https://leetcode.com/problems/implement-queue-using-stacks/",
+    "difficulty": "Easy",
+    "tags": [
+      "Stack",
+      "Design",
+      "Queue"
+    ],
+    "pattern": "Design",
+    "key_idea": "Push onto an in-stack; when the out-stack is empty, pour the in-stack into it so the oldest item is on top.",
+    "time": "O(1) amortized",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0232. Implement Queue using Stacks.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "234",
+    "title": "Palindrome Linked List",
+    "slug": "palindrome-linked-list",
+    "url": "https://leetcode.com/problems/palindrome-linked-list/",
+    "difficulty": "Easy",
+    "tags": [
+      "Linked List",
+      "Two Pointers",
+      "Stack",
+      "Recursion"
+    ],
+    "pattern": "Stack",
+    "key_idea": "Push first-half values while a fast pointer runs ahead, skip the middle if odd, then pop to compare with the second half.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0234. Palindrome Linked List.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "235",
+    "title": "Lowest Common Ancestor of a Binary Search Tree",
+    "slug": "lowest-common-ancestor-of-a-binary-search-tree",
+    "url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/",
+    "difficulty": "Medium",
+    "tags": [
+      "Tree",
+      "Depth-First Search",
+      "Binary Search Tree",
+      "Binary Tree",
+      "Binary Lifting",
+      "Lowest Common Ancestor"
+    ],
+    "pattern": "Trees",
+    "key_idea": "Walk down from the root: left if both values are smaller, right if both are larger, otherwise this node splits them.",
+    "time": "O(h)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0235. Lowest Common Ancestor of a Binary Search Tree.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "236",
+    "title": "Lowest Common Ancestor of a Binary Tree",
+    "slug": "lowest-common-ancestor-of-a-binary-tree",
+    "url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/",
+    "difficulty": "Medium",
+    "tags": [
+      "Tree",
+      "Depth-First Search",
+      "Binary Tree",
+      "Binary Lifting",
+      "Lowest Common Ancestor"
+    ],
+    "pattern": "Trees",
+    "key_idea": "Return the node if it is null, p or q; a node whose left and right searches both succeed is the LCA.",
+    "time": "O(n)",
+    "space": "O(h)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0236. Lowest Common Ancestor of a Binary Tree.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "237",
+    "title": "Delete Node in a Linked List",
+    "slug": "delete-node-in-a-linked-list",
+    "url": "https://leetcode.com/problems/delete-node-in-a-linked-list/",
+    "difficulty": "Medium",
+    "tags": [
+      "Linked List"
+    ],
+    "pattern": "Linked List",
+    "key_idea": "Copy the next node's value into this node, then unlink the next node.",
+    "time": "O(1)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0237. Delete Node in a Linked List.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "238",
+    "title": "Product of Array Except Self",
+    "slug": "product-of-array-except-self",
+    "url": "https://leetcode.com/problems/product-of-array-except-self/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Prefix Sum"
+    ],
+    "pattern": "Prefix Sum",
+    "key_idea": "Fill ans with prefix products from the left, then multiply in a running suffix product from the right.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0238. Product of Array Except Self.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "239",
+    "title": "Sliding Window Maximum",
+    "slug": "sliding-window-maximum",
+    "url": "https://leetcode.com/problems/sliding-window-maximum/",
+    "difficulty": "Hard",
+    "tags": [
+      "Array",
+      "Queue",
+      "Sliding Window",
+      "Heap (Priority Queue)",
+      "Monotonic Queue",
+      "Range Minimum/Maximum Query"
+    ],
+    "pattern": "Sliding Window",
+    "key_idea": "Monotonic deque of indices: drop indices that left the window and smaller values at the back; the front is the max.",
+    "time": "O(n)",
+    "space": "O(k)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/hard/0239. Sliding Window Maximum.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "242",
+    "title": "Valid Anagram",
+    "slug": "valid-anagram",
+    "url": "https://leetcode.com/problems/valid-anagram/",
+    "difficulty": "Easy",
+    "tags": [
+      "Hash Table",
+      "String",
+      "Sorting"
+    ],
+    "pattern": "Sorting",
+    "key_idea": "Sort the characters of both strings and compare the arrays.",
+    "time": "O(n log n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0242. Valid Anagram.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "257",
+    "title": "Binary Tree Paths",
+    "slug": "binary-tree-paths",
+    "url": "https://leetcode.com/problems/binary-tree-paths/",
+    "difficulty": "Easy",
+    "tags": [
+      "String",
+      "Backtracking",
+      "Tree",
+      "Depth-First Search",
+      "Binary Tree"
+    ],
+    "pattern": "Trees",
+    "key_idea": "DFS that appends each value to a path string and records the finished path at every leaf.",
+    "time": "O(n·h)",
+    "space": "O(h^2)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0257. Binary Tree Paths.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "258",
+    "title": "Add Digits",
+    "slug": "add-digits",
+    "url": "https://leetcode.com/problems/add-digits/",
+    "difficulty": "Easy",
+    "tags": [
+      "Math",
+      "Simulation",
+      "Number Theory"
+    ],
+    "pattern": "Math",
+    "key_idea": "Digital root: 0 stays 0, multiples of 9 give 9, everything else gives num mod 9.",
+    "time": "O(1)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0258. Add Digits.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "263",
+    "title": "Ugly Number",
+    "slug": "ugly-number",
+    "url": "https://leetcode.com/problems/ugly-number/",
+    "difficulty": "Easy",
+    "tags": [
+      "Math"
+    ],
+    "pattern": "Math",
+    "key_idea": "Divide out every factor of 2, 3 and 5; the number is ugly if 1 remains.",
+    "time": "O(log n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0263. Ugly Number.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "268",
+    "title": "Missing Number",
+    "slug": "missing-number",
+    "url": "https://leetcode.com/problems/missing-number/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Math",
+      "Binary Search",
+      "Bit Manipulation",
+      "Sorting"
+    ],
+    "pattern": "Math",
+    "key_idea": "Subtract the array's sum from n(n + 1)/2, the sum of 0 to n.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0268. Missing Number.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "274",
+    "title": "H-Index",
+    "slug": "h-index",
+    "url": "https://leetcode.com/problems/h-index/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Sorting",
+      "Counting Sort"
+    ],
+    "pattern": "Arrays & Hashing",
+    "key_idea": "Bucket papers by citation count, capped at n, then scan down from n until the papers counted reach the index.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0274. H-Index.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "278",
+    "title": "First Bad Version",
+    "slug": "first-bad-version",
+    "url": "https://leetcode.com/problems/first-bad-version/",
+    "difficulty": "Easy",
+    "tags": [
+      "Binary Search",
+      "Interactive"
+    ],
+    "pattern": "Binary Search",
+    "key_idea": "Binary search for the leftmost bad version, remembering each bad mid and searching left of it.",
+    "time": "O(log n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0278. First Bad Version.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "283",
+    "title": "Move Zeroes",
+    "slug": "move-zeroes",
+    "url": "https://leetcode.com/problems/move-zeroes/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Two Pointers"
+    ],
+    "pattern": "Two Pointers",
+    "key_idea": "Copy each non-zero forward to a write index, then fill the rest with zeros.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0283. Move Zeroes.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "287",
+    "title": "Find the Duplicate Number",
+    "slug": "find-the-duplicate-number",
+    "url": "https://leetcode.com/problems/find-the-duplicate-number/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Two Pointers",
+      "Binary Search",
+      "Bit Manipulation",
+      "Pigeonhole Principle",
+      "Floyd's Cycle Finding Algorithm"
+    ],
+    "pattern": "Two Pointers",
+    "key_idea": "Treat each value as a pointer to an index; Floyd's cycle detection finds the cycle entrance, which is the duplicate.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0287. Find the Duplicate Number.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "292",
+    "title": "Nim Game",
+    "slug": "nim-game",
+    "url": "https://leetcode.com/problems/nim-game/",
+    "difficulty": "Easy",
+    "tags": [
+      "Math",
+      "Brainteaser",
+      "Minimax",
+      "Game Theory",
+      "Nim Game",
+      "Impartial Game"
+    ],
+    "pattern": "Math",
+    "key_idea": "You lose exactly when n is a multiple of 4, because the opponent can always restore that.",
+    "time": "O(1)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0292. Nim Game.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "295",
+    "title": "Find Median from Data Stream",
+    "slug": "find-median-from-data-stream",
+    "url": "https://leetcode.com/problems/find-median-from-data-stream/",
+    "difficulty": "Hard",
+    "tags": [
+      "Two Pointers",
+      "Design",
+      "Sorting",
+      "Heap (Priority Queue)",
+      "Data Stream"
+    ],
+    "pattern": "Heap / Priority Queue",
+    "key_idea": "A max-heap holds the lower half and a min-heap the upper; rebalance so the lower has equal or one more.",
+    "time": "O(log n) add, O(1) median",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/hard/0295. Find Median from Data Stream.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "303",
+    "title": "Range Sum Query - Immutable",
+    "slug": "range-sum-query-immutable",
+    "url": "https://leetcode.com/problems/range-sum-query-immutable/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Design",
+      "Prefix Sum"
+    ],
+    "pattern": "Prefix Sum",
+    "key_idea": "Precompute prefix sums; a range sum is prefix[right + 1] − prefix[left].",
+    "time": "O(n) build, O(1) query",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0303. Range Sum Query - Immutable.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "304",
+    "title": "Range Sum Query 2D - Immutable",
+    "slug": "range-sum-query-2d-immutable",
+    "url": "https://leetcode.com/problems/range-sum-query-2d-immutable/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Design",
+      "Matrix",
+      "Prefix Sum"
+    ],
+    "pattern": "Prefix Sum",
+    "key_idea": "Build 2D prefix sums by inclusion-exclusion; a region sum combines four corner values.",
+    "time": "O(m·n) build, O(1) query",
+    "space": "O(m·n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0304. Range Sum Query 2D - Immutable.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "315",
+    "title": "Count of Smaller Numbers After Self",
+    "slug": "count-of-smaller-numbers-after-self",
+    "url": "https://leetcode.com/problems/count-of-smaller-numbers-after-self/",
+    "difficulty": "Hard",
+    "tags": [
+      "Array",
+      "Binary Search",
+      "Divide and Conquer",
+      "Binary Indexed Tree",
+      "Segment Tree",
+      "Merge Sort",
+      "Ordered Set",
+      "Treap"
+    ],
+    "pattern": "Sorting",
+    "key_idea": "Merge sort (value, index) pairs; each right element placed before left ones adds to those left elements' counts.",
+    "time": "O(n log n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/hard/0315. Count of Smaller Numbers After Self.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "324",
+    "title": "Wiggle Sort II",
+    "slug": "wiggle-sort-ii",
+    "url": "https://leetcode.com/problems/wiggle-sort-ii/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Divide and Conquer",
+      "Greedy",
+      "Sorting",
+      "Quickselect"
+    ],
+    "pattern": "Sorting",
+    "key_idea": "Quickselect the median, then put smaller values on even slots from the back, larger on odd slots from the front, median elsewhere.",
+    "time": "O(n) expected",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0324. Wiggle Sort II.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "325",
+    "title": "Maximum Sum of Subarrays of Size K",
+    "slug": null,
+    "url": null,
+    "difficulty": null,
+    "tags": [],
+    "pattern": "Sliding Window",
+    "key_idea": "Fixed-size window: add the new element; once the window holds k elements, record its sum and drop the leftmost.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0325. Maximum Sum of Subarrays of Size K.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "326",
+    "title": "Power of Three",
+    "slug": "power-of-three",
+    "url": "https://leetcode.com/problems/power-of-three/",
+    "difficulty": "Easy",
+    "tags": [
+      "Math",
+      "Recursion"
+    ],
+    "pattern": "Math",
+    "key_idea": "Divide by 3 while divisible; it is a power of three only if it reaches exactly 1.",
+    "time": "O(log n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0326. Power of Three.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "342",
+    "title": "Power of Four",
+    "slug": "power-of-four",
+    "url": "https://leetcode.com/problems/power-of-four/",
+    "difficulty": "Easy",
+    "tags": [
+      "Math",
+      "Bit Manipulation",
+      "Recursion"
+    ],
+    "pattern": "Math",
+    "key_idea": "Divide by 4 while divisible; it is a power of four only if it reaches exactly 1.",
+    "time": "O(log n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0342. Power of Four.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "344",
+    "title": "Reverse String",
+    "slug": "reverse-string",
+    "url": "https://leetcode.com/problems/reverse-string/",
+    "difficulty": "Easy",
+    "tags": [
+      "Two Pointers",
+      "String"
+    ],
+    "pattern": "Two Pointers",
+    "key_idea": "Swap the two ends and move both pointers inward until they meet.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0344. Reverse String.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "345",
+    "title": "Reverse Vowels of a String",
+    "slug": "reverse-vowels-of-a-string",
+    "url": "https://leetcode.com/problems/reverse-vowels-of-a-string/",
+    "difficulty": "Easy",
+    "tags": [
+      "Two Pointers",
+      "String"
+    ],
+    "pattern": "Two Pointers",
+    "key_idea": "Two pointers skip non-vowels from each end, then swap the vowels they stop on.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0345. Reverse Vowels of a String.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "347",
+    "title": "Top K Frequent Elements",
+    "slug": "top-k-frequent-elements",
+    "url": "https://leetcode.com/problems/top-k-frequent-elements/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Divide and Conquer",
+      "Sorting",
+      "Heap (Priority Queue)",
+      "Bucket Sort",
+      "Counting",
+      "Quickselect"
+    ],
+    "pattern": "Heap / Priority Queue",
+    "key_idea": "Count frequencies, keep a size-k min-heap by count, then pop it into the answer from the back.",
+    "time": "O(n log k)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0347. Top K Frequent Elements.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "350",
+    "title": "Intersection of Two Arrays II",
+    "slug": "intersection-of-two-arrays-ii",
+    "url": "https://leetcode.com/problems/intersection-of-two-arrays-ii/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Two Pointers",
+      "Binary Search",
+      "Sorting"
+    ],
+    "pattern": "Two Pointers",
+    "key_idea": "Sort both arrays and walk them with two pointers, collecting values that match.",
+    "time": "O(m log m + n log n)",
+    "space": "O(min(m, n))",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0350. Intersection of Two Arrays II.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "367",
+    "title": "Valid Perfect Square",
+    "slug": "valid-perfect-square",
+    "url": "https://leetcode.com/problems/valid-perfect-square/",
+    "difficulty": "Easy",
+    "tags": [
+      "Math",
+      "Binary Search"
+    ],
+    "pattern": "Binary Search",
+    "key_idea": "Binary search 0..num with longs; true if some mid squared equals num exactly.",
+    "time": "O(log num)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0367. Valid Perfect Square.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "370",
+    "title": "Range Addition",
+    "slug": "range-addition",
+    "url": "https://leetcode.com/problems/range-addition/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Prefix Sum"
+    ],
+    "pattern": "Prefix Sum",
+    "key_idea": "Difference array: add the value at start, subtract it just after end, then prefix-sum the array once.",
+    "time": "O(length + k)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0370. Range Addition.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "374",
+    "title": "Guess Number Higher or Lower",
+    "slug": "guess-number-higher-or-lower",
+    "url": "https://leetcode.com/problems/guess-number-higher-or-lower/",
+    "difficulty": "Easy",
+    "tags": [
+      "Binary Search",
+      "Interactive"
+    ],
+    "pattern": "Binary Search",
+    "key_idea": "Binary search 1..n, moving by the sign that guess returns until it returns 0.",
+    "time": "O(log n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0374. Guess Number Higher or Lower.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "383",
+    "title": "Ransom Note",
+    "slug": "ransom-note",
+    "url": "https://leetcode.com/problems/ransom-note/",
+    "difficulty": "Easy",
+    "tags": [
+      "Hash Table",
+      "String",
+      "Counting"
+    ],
+    "pattern": "Arrays & Hashing",
+    "key_idea": "Count magazine letters in a map, then spend one per ransom-note letter, failing when a count runs out.",
+    "time": "O(m + n)",
+    "space": "O(m + n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0383. Ransom Note.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "387",
+    "title": "First Unique Character in a String",
+    "slug": "first-unique-character-in-a-string",
+    "url": "https://leetcode.com/problems/first-unique-character-in-a-string/",
+    "difficulty": "Easy",
+    "tags": [
+      "Hash Table",
+      "String",
+      "Queue",
+      "Counting"
+    ],
+    "pattern": "Arrays & Hashing",
+    "key_idea": "Count each char in a map, then return the first index whose char has count 1.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0387. First Unique Character in a String.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "389",
+    "title": "Find the Difference",
+    "slug": "find-the-difference",
+    "url": "https://leetcode.com/problems/find-the-difference/",
+    "difficulty": "Easy",
+    "tags": [
+      "Hash Table",
+      "String",
+      "Bit Manipulation",
+      "Sorting"
+    ],
+    "pattern": "Math",
+    "key_idea": "Sum t's char codes and subtract s's; what is left is the added character.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0389. Find the Difference.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "392",
+    "title": "Is Subsequence",
+    "slug": "is-subsequence",
+    "url": "https://leetcode.com/problems/is-subsequence/",
+    "difficulty": "Easy",
+    "tags": [
+      "Two Pointers",
+      "String",
+      "Dynamic Programming"
+    ],
+    "pattern": "Two Pointers",
+    "key_idea": "Scan t once, advancing a pointer in s on every match; s is a subsequence if it gets fully matched.",
+    "time": "O(|t|)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0392. Is Subsequence.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "394",
+    "title": "Decode String",
+    "slug": "decode-string",
+    "url": "https://leetcode.com/problems/decode-string/",
+    "difficulty": "Medium",
+    "tags": [
+      "String",
+      "Stack",
+      "Recursion"
+    ],
+    "pattern": "Stack",
+    "key_idea": "Two stacks hold repeat counts and outer builders; on ']' append the inner string count times to the popped outer one.",
+    "time": "O(n + L)",
+    "space": "O(n + L)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0394. Decode String.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "396",
+    "title": "Rotate Function",
+    "slug": "rotate-function",
+    "url": "https://leetcode.com/problems/rotate-function/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Math",
+      "Dynamic Programming"
+    ],
+    "pattern": "Math",
+    "key_idea": "Compute F(0) and the total sum, then derive each rotation as F(i) = F(i − 1) + sum − n·nums[n − i].",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0396. Rotate Function.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "402",
+    "title": "Remove K Digits",
+    "slug": "remove-k-digits",
+    "url": "https://leetcode.com/problems/remove-k-digits/",
+    "difficulty": "Medium",
+    "tags": [
+      "String",
+      "Stack",
+      "Greedy",
+      "Monotonic Stack"
+    ],
+    "pattern": "Stack",
+    "key_idea": "Monotonic stack: pop larger earlier digits while k remains, cut any leftover k from the end, strip leading zeros.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0402. Remove K Digits.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "404",
+    "title": "Sum of Left Leaves",
+    "slug": "sum-of-left-leaves",
+    "url": "https://leetcode.com/problems/sum-of-left-leaves/",
+    "difficulty": "Easy",
+    "tags": [
+      "Tree",
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Binary Tree"
+    ],
+    "pattern": "Trees",
+    "key_idea": "If a node's left child is a leaf add its value, otherwise recurse into it; always recurse into the right child.",
+    "time": "O(n)",
+    "space": "O(h)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0404. Sum of Left Leaves.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "409",
+    "title": "Longest Palindrome",
+    "slug": "longest-palindrome",
+    "url": "https://leetcode.com/problems/longest-palindrome/",
+    "difficulty": "Easy",
+    "tags": [
+      "Hash Table",
+      "String",
+      "Greedy"
+    ],
+    "pattern": "Arrays & Hashing",
+    "key_idea": "Toggle chars in a set; each completed pair adds 2, and any unpaired char left adds 1 for the center.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0409. Longest Palindrome.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "414",
+    "title": "Third Maximum Number",
+    "slug": "third-maximum-number",
+    "url": "https://leetcode.com/problems/third-maximum-number/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Sorting"
+    ],
+    "pattern": "Sorting",
+    "key_idea": "Sort, then walk down from the largest counting distinct values; return the third, or the maximum if there are fewer.",
+    "time": "O(n log n)",
+    "space": "O(log n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0414. Third Maximum Number.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "424",
+    "title": "Longest Repeating Character Replacement",
+    "slug": "longest-repeating-character-replacement",
+    "url": "https://leetcode.com/problems/longest-repeating-character-replacement/",
+    "difficulty": "Medium",
+    "tags": [
+      "Hash Table",
+      "String",
+      "Sliding Window"
+    ],
+    "pattern": "Sliding Window",
+    "key_idea": "Window with letter counts; shrink while its size minus the top letter frequency exceeds k; track the widest window.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0424. Longest Repeating Character Replacement.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "434",
+    "title": "Number of Segments in a String",
+    "slug": "number-of-segments-in-a-string",
+    "url": "https://leetcode.com/problems/number-of-segments-in-a-string/",
+    "difficulty": "Easy",
+    "tags": [
+      "String"
+    ],
+    "pattern": "Strings",
+    "key_idea": "Count positions holding a non-space char whose previous char is a space or the string start.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0434. Number of Segments in a String.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "435",
+    "title": "Non-overlapping Intervals",
+    "slug": "non-overlapping-intervals",
+    "url": "https://leetcode.com/problems/non-overlapping-intervals/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Dynamic Programming",
+      "Greedy",
+      "Sorting"
+    ],
+    "pattern": "Intervals",
+    "key_idea": "Sort by end; keep each interval starting at or after the last kept end and count the rest as removals.",
+    "time": "O(n log n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0435. Non-overlapping Intervals.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "437",
+    "title": "Path Sum III",
+    "slug": "path-sum-iii",
+    "url": "https://leetcode.com/problems/path-sum-iii/",
+    "difficulty": "Medium",
+    "tags": [
+      "Tree",
+      "Depth-First Search",
+      "Binary Tree"
+    ],
+    "pattern": "Trees",
+    "key_idea": "DFS holding the root-to-node path; at each node sum backward along the path and count suffixes equal to targetSum.",
+    "time": "O(n·h)",
+    "space": "O(h)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0437. Path Sum III.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "441",
+    "title": "Arranging Coins",
+    "slug": "arranging-coins",
+    "url": "https://leetcode.com/problems/arranging-coins/",
+    "difficulty": "Easy",
+    "tags": [
+      "Math",
+      "Binary Search"
+    ],
+    "pattern": "Binary Search",
+    "key_idea": "Binary search, with longs, for the largest row count k where k(k + 1)/2 ≤ n.",
+    "time": "O(log n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0441. Arranging Coins.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "443",
+    "title": "String Compression",
+    "slug": "string-compression",
+    "url": "https://leetcode.com/problems/string-compression/",
+    "difficulty": "Medium",
+    "tags": [
+      "Two Pointers",
+      "String"
+    ],
+    "pattern": "Two Pointers",
+    "key_idea": "A read pointer measures each run; a write pointer stores the char and, for runs longer than 1, the count's digits.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0443. String Compression.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "448",
+    "title": "Find All Numbers Disappeared in an Array",
+    "slug": "find-all-numbers-disappeared-in-an-array",
+    "url": "https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Hash Table"
+    ],
+    "pattern": "Arrays & Hashing",
+    "key_idea": "Mark each seen value by negating nums[value − 1]; indices left positive are the missing numbers.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0448. Find All Numbers Disappeared in an Array.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "450",
+    "title": "Delete Node in a BST",
+    "slug": "delete-node-in-a-bst",
+    "url": "https://leetcode.com/problems/delete-node-in-a-bst/",
+    "difficulty": "Medium",
+    "tags": [
+      "Tree",
+      "Binary Search Tree",
+      "Binary Tree"
+    ],
+    "pattern": "Trees",
+    "key_idea": "Find key by BST order; with two children, copy in the right subtree's minimum and delete that value from the right.",
+    "time": "O(h)",
+    "space": "O(h)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0450. Delete Node in a BST.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "451",
+    "title": "Sort Characters By Frequency",
+    "slug": "sort-characters-by-frequency",
+    "url": "https://leetcode.com/problems/sort-characters-by-frequency/",
+    "difficulty": "Medium",
+    "tags": [
+      "Hash Table",
+      "String",
+      "Sorting",
+      "Heap (Priority Queue)",
+      "Bucket Sort",
+      "Counting"
+    ],
+    "pattern": "Heap / Priority Queue",
+    "key_idea": "Count chars, push them into a max-heap ordered by count, then append each char count times as it pops.",
+    "time": "O(n + k log k)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0451. Sort Characters By Frequency.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "455",
+    "title": "Assign Cookies",
+    "slug": "assign-cookies",
+    "url": "https://leetcode.com/problems/assign-cookies/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Two Pointers",
+      "Greedy",
+      "Sorting",
+      "Quicksort"
+    ],
+    "pattern": "Greedy",
+    "key_idea": "Sort both arrays; hand out cookies in increasing size, each to the least greedy child it can satisfy.",
+    "time": "O(n log n + m log m)",
+    "space": "O(log n + log m)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0455. Assign Cookies.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "461",
+    "title": "Hamming Distance",
+    "slug": "hamming-distance",
+    "url": "https://leetcode.com/problems/hamming-distance/",
+    "difficulty": "Easy",
+    "tags": [
+      "Bit Manipulation"
+    ],
+    "pattern": "Bit Manipulation",
+    "key_idea": "XOR the two numbers so differing bits become 1, then count them with Integer.bitCount.",
+    "time": "O(1)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0461. Hamming Distance.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "476",
+    "title": "Number Complement",
+    "slug": "number-complement",
+    "url": "https://leetcode.com/problems/number-complement/",
+    "difficulty": "Easy",
+    "tags": [
+      "Bit Manipulation"
+    ],
+    "pattern": "Bit Manipulation",
+    "key_idea": "Build a mask of 1s as wide as num's binary form and XOR num with it.",
+    "time": "O(1)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0476. Number Complement.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "480",
+    "title": "Sliding Window Median",
+    "slug": "sliding-window-median",
+    "url": "https://leetcode.com/problems/sliding-window-median/",
+    "difficulty": "Hard",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Sliding Window",
+      "Heap (Priority Queue)",
+      "Treap"
+    ],
+    "pattern": "Heap / Priority Queue",
+    "key_idea": "Two heaps with lazy deletion: a balance counter tracks live sizes, and outgoing values are discarded once they reach a heap top.",
+    "time": "O(n log n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/hard/0480. Sliding Window Median.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "485",
+    "title": "Max Consecutive Ones",
+    "slug": "max-consecutive-ones",
+    "url": "https://leetcode.com/problems/max-consecutive-ones/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array"
+    ],
+    "pattern": "Arrays & Hashing",
+    "key_idea": "Count the current run of 1s, reset it at each 0, and keep the longest run.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0485. Max Consecutive Ones.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "495",
+    "title": "Teemo Attacking",
+    "slug": "teemo-attacking",
+    "url": "https://leetcode.com/problems/teemo-attacking/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Simulation"
+    ],
+    "pattern": "Intervals",
+    "key_idea": "Each attack adds the smaller of the gap to the next attack and duration; the last attack adds a full duration.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0495. Teemo Attacking.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "496",
+    "title": "Next Greater Element I",
+    "slug": "next-greater-element-i",
+    "url": "https://leetcode.com/problems/next-greater-element-i/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Stack",
+      "Monotonic Stack"
+    ],
+    "pattern": "Stack",
+    "key_idea": "A monotonic stack over nums2 maps each value to the first larger value after it; then look up each nums1 value.",
+    "time": "O(m + n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0496. Next Greater Element I.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "503",
+    "title": "Next Greater Element II",
+    "slug": "next-greater-element-ii",
+    "url": "https://leetcode.com/problems/next-greater-element-ii/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Stack",
+      "Monotonic Stack"
+    ],
+    "pattern": "Stack",
+    "key_idea": "Monotonic stack of indices over two passes of the circular array; a larger value resolves every smaller index it pops.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0503. Next Greater Element II.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "506",
+    "title": "Relative Ranks",
+    "slug": "relative-ranks",
+    "url": "https://leetcode.com/problems/relative-ranks/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Sorting",
+      "Heap (Priority Queue)"
+    ],
+    "pattern": "Heap / Priority Queue",
+    "key_idea": "Pop scores from a max-heap to assign medals and ranks in a score→rank map, then read ranks in input order.",
+    "time": "O(n log n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0506. Relative Ranks.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "509",
+    "title": "Fibonacci Number",
+    "slug": "fibonacci-number",
+    "url": "https://leetcode.com/problems/fibonacci-number/",
+    "difficulty": "Easy",
+    "tags": [
+      "Math",
+      "Dynamic Programming",
+      "Recursion",
+      "Memoization"
+    ],
+    "pattern": "Dynamic Programming",
+    "key_idea": "Top-down memoized recursion: f[n] = fib(n − 1) + fib(n − 2), cached in an array.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0509. Fibonacci Number.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "541",
+    "title": "Reverse String II",
+    "slug": "reverse-string-ii",
+    "url": "https://leetcode.com/problems/reverse-string-ii/",
+    "difficulty": "Easy",
+    "tags": [
+      "Two Pointers",
+      "String"
+    ],
+    "pattern": "Two Pointers",
+    "key_idea": "Step through the string in chunks of 2k and reverse the first k chars of each chunk in place.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0541. Reverse String II.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "557",
+    "title": "Reverse Words in a String III",
+    "slug": "reverse-words-in-a-string-iii",
+    "url": "https://leetcode.com/problems/reverse-words-in-a-string-iii/",
+    "difficulty": "Easy",
+    "tags": [
+      "Two Pointers",
+      "String"
+    ],
+    "pattern": "Two Pointers",
+    "key_idea": "Scan for spaces and reverse each word's chars in place between its start and the next space.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0557. Reverse Words in a String III.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "560",
+    "title": "Subarray Sum Equals K",
+    "slug": "subarray-sum-equals-k",
+    "url": "https://leetcode.com/problems/subarray-sum-equals-k/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Prefix Sum"
+    ],
+    "pattern": "Prefix Sum",
+    "key_idea": "Keep a running prefix sum and a count map of earlier prefix sums; add the count of prefix − k each step.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0560. Subarray Sum Equals K.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "561",
+    "title": "Array Partition",
+    "slug": "array-partition",
+    "url": "https://leetcode.com/problems/array-partition/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Greedy",
+      "Sorting",
+      "Counting Sort"
+    ],
+    "pattern": "Sorting",
+    "key_idea": "Sort, then pair neighbours; the answer is the sum of the elements at even indices.",
+    "time": "O(n log n)",
+    "space": "O(log n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0561. Array Partition.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "563",
+    "title": "Binary Tree Tilt",
+    "slug": "binary-tree-tilt",
+    "url": "https://leetcode.com/problems/binary-tree-tilt/",
+    "difficulty": "Easy",
+    "tags": [
+      "Tree",
+      "Depth-First Search",
+      "Binary Tree",
+      "DP on Trees"
+    ],
+    "pattern": "Trees",
+    "key_idea": "Post-order DFS returns each subtree's sum and adds |left sum − right sum| to a running total.",
+    "time": "O(n)",
+    "space": "O(h)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0563. Binary Tree Tilt.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "594",
+    "title": "Longest Harmonious Subsequence",
+    "slug": "longest-harmonious-subsequence",
+    "url": "https://leetcode.com/problems/longest-harmonious-subsequence/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Sliding Window",
+      "Sorting",
+      "Counting"
+    ],
+    "pattern": "Sliding Window",
+    "key_idea": "Sort, then keep a window whose max − min is at most 1, recording its size when the difference is exactly 1.",
+    "time": "O(n log n)",
+    "space": "O(log n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0594. Longest Harmonious Subsequence.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "611",
+    "title": "Valid Triangle Number",
+    "slug": "valid-triangle-number",
+    "url": "https://leetcode.com/problems/valid-triangle-number/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Two Pointers",
+      "Binary Search",
+      "Greedy",
+      "Sorting"
+    ],
+    "pattern": "Two Pointers",
+    "key_idea": "Sort; for each largest side i, two pointers count pairs summing above nums[i], adding b − a pairs at once.",
+    "time": "O(n^2)",
+    "space": "O(log n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0611. Valid Triangle Number.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "621",
+    "title": "Task Scheduler",
+    "slug": "task-scheduler",
+    "url": "https://leetcode.com/problems/task-scheduler/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Greedy",
+      "Sorting",
+      "Heap (Priority Queue)",
+      "Counting"
+    ],
+    "pattern": "Heap / Priority Queue",
+    "key_idea": "Simulate each time unit: run the most frequent task from a max-heap, then park it in a cooldown queue for n units.",
+    "time": "O(m·n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0621. Task Scheduler.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "630",
+    "title": "Course Schedule III",
+    "slug": "course-schedule-iii",
+    "url": "https://leetcode.com/problems/course-schedule-iii/",
+    "difficulty": "Hard",
+    "tags": [
+      "Array",
+      "Greedy",
+      "Sorting",
+      "Heap (Priority Queue)"
+    ],
+    "pattern": "Heap / Priority Queue",
+    "key_idea": "Sort by deadline and take each course; if time passes the deadline, drop the longest course taken, kept in a max-heap.",
+    "time": "O(n log n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/hard/0630. Course Schedule III.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "641",
+    "title": "Design Circular Deque",
+    "slug": "design-circular-deque",
+    "url": "https://leetcode.com/problems/design-circular-deque/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Linked List",
+      "Design",
+      "Queue"
+    ],
+    "pattern": "Design",
+    "key_idea": "Wraps an ArrayDeque and enforces capacity k by checking its size before each insert.",
+    "time": "O(1) per operation",
+    "space": "O(k)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0641. Design Circular Deque.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "645",
+    "title": "Set Mismatch",
+    "slug": "set-mismatch",
+    "url": "https://leetcode.com/problems/set-mismatch/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Bit Manipulation",
+      "Sorting"
+    ],
+    "pattern": "Sorting",
+    "key_idea": "Sort, then scan with an expected counter: a repeat of the previous value is the duplicate, a jump reveals the missing one.",
+    "time": "O(n log n)",
+    "space": "O(log n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0645. Set Mismatch.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "659",
+    "title": "Split Array into Consecutive Subsequences",
+    "slug": "split-array-into-consecutive-subsequences",
+    "url": "https://leetcode.com/problems/split-array-into-consecutive-subsequences/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Greedy",
+      "Heap (Priority Queue)"
+    ],
+    "pattern": "Heap / Priority Queue",
+    "key_idea": "Min-heap of (chain end, length): extend the shortest chain ending at num − 1; fail on any closed chain shorter than 3.",
+    "time": "O(n log n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0659. Split Array into Consecutive Subsequences.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "680",
+    "title": "Valid Palindrome II",
+    "slug": "valid-palindrome-ii",
+    "url": "https://leetcode.com/problems/valid-palindrome-ii/",
+    "difficulty": "Easy",
+    "tags": [
+      "Two Pointers",
+      "String",
+      "Greedy"
+    ],
+    "pattern": "Two Pointers",
+    "key_idea": "Move two pointers inward; at the first mismatch, check whether skipping the left or the right char leaves a palindrome.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0680. Valid Palindrome II.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "692",
+    "title": "Top K Frequent Words",
+    "slug": "top-k-frequent-words",
+    "url": "https://leetcode.com/problems/top-k-frequent-words/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "String",
+      "Trie",
+      "Sorting",
+      "Heap (Priority Queue)",
+      "Bucket Sort",
+      "Counting"
+    ],
+    "pattern": "Heap / Priority Queue",
+    "key_idea": "Count words, keep a size-k min-heap (lower count first, then later word first), then pop and reverse.",
+    "time": "O(n log k)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0692. Top K Frequent Words.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "693",
+    "title": "Binary Number with Alternating Bits",
+    "slug": "binary-number-with-alternating-bits",
+    "url": "https://leetcode.com/problems/binary-number-with-alternating-bits/",
+    "difficulty": "Easy",
+    "tags": [
+      "Bit Manipulation"
+    ],
+    "pattern": "Bit Manipulation",
+    "key_idea": "n XOR (n >> 1) is all 1s exactly when bits alternate; x & (x + 1) being zero confirms all 1s.",
+    "time": "O(1)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0693. Binary Number with Alternating Bits.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "696",
+    "title": "Count Binary Substrings",
+    "slug": "count-binary-substrings",
+    "url": "https://leetcode.com/problems/count-binary-substrings/",
+    "difficulty": "Easy",
+    "tags": [
+      "Two Pointers",
+      "String"
+    ],
+    "pattern": "Strings",
+    "key_idea": "Track the lengths of the previous and current runs of equal chars; each run boundary adds min(previous, current).",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0696. Count Binary Substrings.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "698",
+    "title": "Partition to K Equal Sum Subsets",
+    "slug": "partition-to-k-equal-sum-subsets",
+    "url": "https://leetcode.com/problems/partition-to-k-equal-sum-subsets/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Dynamic Programming",
+      "Backtracking",
+      "Bit Manipulation",
+      "Memoization",
+      "Bitmask"
+    ],
+    "pattern": "Backtracking",
+    "key_idea": "Sort descending, place each number into a bucket with room, undo on failure, and stop trying after an empty bucket.",
+    "time": "O(k^n)",
+    "space": "O(n + k)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0698. Partition to K Equal Sum Subsets.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "700",
+    "title": "Search in a Binary Search Tree",
+    "slug": "search-in-a-binary-search-tree",
+    "url": "https://leetcode.com/problems/search-in-a-binary-search-tree/",
+    "difficulty": "Easy",
+    "tags": [
+      "Tree",
+      "Binary Search Tree",
+      "Binary Tree"
+    ],
+    "pattern": "Trees",
+    "key_idea": "Follow BST order from the root, left when val is smaller and right when larger, until it matches or runs out.",
+    "time": "O(h)",
+    "space": "O(h)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0700. Search in a Binary Search Tree.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "703",
+    "title": "Kth Largest Element in a Stream",
+    "slug": "kth-largest-element-in-a-stream",
+    "url": "https://leetcode.com/problems/kth-largest-element-in-a-stream/",
+    "difficulty": "Easy",
+    "tags": [
+      "Tree",
+      "Design",
+      "Binary Search Tree",
+      "Heap (Priority Queue)",
+      "Binary Tree",
+      "Data Stream"
+    ],
+    "pattern": "Heap / Priority Queue",
+    "key_idea": "Keep only the k largest values in a min-heap; its top is the k-th largest after each add.",
+    "time": "O(log k) per add",
+    "space": "O(k)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0703. Kth Largest Element in a Stream.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "721",
+    "title": "Accounts Merge",
+    "slug": "accounts-merge",
+    "url": "https://leetcode.com/problems/accounts-merge/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "String",
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Union-Find",
+      "Sorting"
+    ],
+    "pattern": "Graphs",
+    "key_idea": "Link each account's emails to its first email in an adjacency map, then DFS each unseen component and sort its emails.",
+    "time": "O(N log N)",
+    "space": "O(N)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0721. Accounts Merge.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "739",
+    "title": "Daily Temperatures",
+    "slug": "daily-temperatures",
+    "url": "https://leetcode.com/problems/daily-temperatures/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Stack",
+      "Monotonic Stack"
+    ],
+    "pattern": "Stack",
+    "key_idea": "Scan right to left with a monotonic stack of indices, popping days that are not warmer; the top is the answer.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0739. Daily Temperatures.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "771",
+    "title": "Jewels and Stones",
+    "slug": "jewels-and-stones",
+    "url": "https://leetcode.com/problems/jewels-and-stones/",
+    "difficulty": "Easy",
+    "tags": [
+      "Hash Table",
+      "String"
+    ],
+    "pattern": "Arrays & Hashing",
+    "key_idea": "Count every stone type in a map, then sum the counts of the jewel types.",
+    "time": "O(m + n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0771. Jewels and Stones.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "783",
+    "title": "Minimum Distance Between BST Nodes",
+    "slug": "minimum-distance-between-bst-nodes",
+    "url": "https://leetcode.com/problems/minimum-distance-between-bst-nodes/",
+    "difficulty": "Easy",
+    "tags": [
+      "Tree",
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Binary Search Tree",
+      "Binary Tree"
+    ],
+    "pattern": "Trees",
+    "key_idea": "In-order traversal visits values in sorted order; track the smallest gap between consecutive values.",
+    "time": "O(n)",
+    "space": "O(h)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0783. Minimum Distance Between BST Nodes.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "788",
+    "title": "Rotated Digits",
+    "slug": "rotated-digits",
+    "url": "https://leetcode.com/problems/rotated-digits/",
+    "difficulty": "Medium",
+    "tags": [
+      "Math",
+      "Dynamic Programming"
+    ],
+    "pattern": "Math",
+    "key_idea": "Check each number up to n digit by digit: no 3, 4 or 7, plus some 2, 5, 6 or 9.",
+    "time": "O(n log n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0788. Rotated Digits.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "796",
+    "title": "Rotate String",
+    "slug": "rotate-string",
+    "url": "https://leetcode.com/problems/rotate-string/",
+    "difficulty": "Easy",
+    "tags": [
+      "String",
+      "String Matching"
+    ],
+    "pattern": "Strings",
+    "key_idea": "goal is a rotation of s exactly when the lengths match and goal appears inside s + s.",
+    "time": "O(n^2)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0796. Rotate String.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "804",
+    "title": "Unique Morse Code Words",
+    "slug": "unique-morse-code-words",
+    "url": "https://leetcode.com/problems/unique-morse-code-words/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "String"
+    ],
+    "pattern": "Arrays & Hashing",
+    "key_idea": "Translate each word letter by letter into Morse code and count the distinct encodings in a set.",
+    "time": "O(S)",
+    "space": "O(S)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0804. Unique Morse Code Words.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "806",
+    "title": "Number of Lines To Write String",
+    "slug": "number-of-lines-to-write-string",
+    "url": "https://leetcode.com/problems/number-of-lines-to-write-string/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "String"
+    ],
+    "pattern": "Simulation",
+    "key_idea": "Add each letter's width to the current line, starting a new line whenever it would pass 100 pixels.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0806. Number of Lines To Write String.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "819",
+    "title": "Most Common Word",
+    "slug": "most-common-word",
+    "url": "https://leetcode.com/problems/most-common-word/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "String",
+      "Counting"
+    ],
+    "pattern": "Arrays & Hashing",
+    "key_idea": "Lowercase and split on non-letters, count non-banned words in a map, and track the most frequent one.",
+    "time": "O(n + m)",
+    "space": "O(n + m)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0819. Most Common Word.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "844",
+    "title": "Backspace String Compare",
+    "slug": "backspace-string-compare",
+    "url": "https://leetcode.com/problems/backspace-string-compare/",
+    "difficulty": "Easy",
+    "tags": [
+      "Two Pointers",
+      "String",
+      "Stack",
+      "Simulation"
+    ],
+    "pattern": "Stack",
+    "key_idea": "Rebuild each string with a StringBuilder used as a stack, deleting the last char on '#', then compare them.",
+    "time": "O(m + n)",
+    "space": "O(m + n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0844. Backspace String Compare.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "857",
+    "title": "Minimum Cost to Hire K Workers",
+    "slug": "minimum-cost-to-hire-k-workers",
+    "url": "https://leetcode.com/problems/minimum-cost-to-hire-k-workers/",
+    "difficulty": "Hard",
+    "tags": [
+      "Array",
+      "Greedy",
+      "Sorting",
+      "Heap (Priority Queue)"
+    ],
+    "pattern": "Heap / Priority Queue",
+    "key_idea": "Sort workers by wage/quality; keep the k smallest qualities in a max-heap and price each group at the current ratio.",
+    "time": "O(n log n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/hard/0857. Minimum Cost to Hire K Workers.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "860",
+    "title": "Lemonade Change",
+    "slug": "lemonade-change",
+    "url": "https://leetcode.com/problems/lemonade-change/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Greedy"
+    ],
+    "pattern": "Greedy",
+    "key_idea": "Count fives and tens; for a 20, prefer giving a ten and a five over three fives.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0860. Lemonade Change.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "862",
+    "title": "Shortest Subarray with Sum at Least K",
+    "slug": "shortest-subarray-with-sum-at-least-k",
+    "url": "https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/",
+    "difficulty": "Hard",
+    "tags": [
+      "Array",
+      "Binary Search",
+      "Queue",
+      "Sliding Window",
+      "Heap (Priority Queue)",
+      "Prefix Sum",
+      "Monotonic Queue"
+    ],
+    "pattern": "Prefix Sum",
+    "key_idea": "Prefix sums with a deque of increasing prefixes: pop the front while the sum reaches k, pop larger prefixes off the back.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/hard/0862. Shortest Subarraywith Sumat Least K.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "867",
+    "title": "Transpose Matrix",
+    "slug": "transpose-matrix",
+    "url": "https://leetcode.com/problems/transpose-matrix/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Matrix",
+      "Simulation"
+    ],
+    "pattern": "Arrays & Hashing",
+    "key_idea": "Copy matrix[i][j] into result[j][i] of a new cols × rows matrix.",
+    "time": "O(m·n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0867. Transpose Matrix.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "901",
+    "title": "Online Stock Span",
+    "slug": "online-stock-span",
+    "url": "https://leetcode.com/problems/online-stock-span/",
+    "difficulty": "Medium",
+    "tags": [
+      "Stack",
+      "Design",
+      "Monotonic Stack",
+      "Data Stream"
+    ],
+    "pattern": "Stack",
+    "key_idea": "Monotonic stack of (price, span); pop every price at most today's and add its span into today's span.",
+    "time": "O(1) amortized",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0901. Online Stock Span.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "904",
+    "title": "Fruit Into Baskets",
+    "slug": "fruit-into-baskets",
+    "url": "https://leetcode.com/problems/fruit-into-baskets/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Sliding Window"
+    ],
+    "pattern": "Sliding Window",
+    "key_idea": "A window of fruit counts that never shrinks: whenever it holds more than two types, slide its left edge one step.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0904. Fruit Into Baskets.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "905",
+    "title": "Sort Array By Parity",
+    "slug": "sort-array-by-parity",
+    "url": "https://leetcode.com/problems/sort-array-by-parity/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Two Pointers",
+      "Sorting"
+    ],
+    "pattern": "Two Pointers",
+    "key_idea": "Swap each even number forward to a write pointer.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0905. Sort Array By Parity.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "912",
+    "title": "Sort an Array",
+    "slug": "sort-an-array",
+    "url": "https://leetcode.com/problems/sort-an-array/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Divide and Conquer",
+      "Sorting",
+      "Heap (Priority Queue)",
+      "Merge Sort",
+      "Bucket Sort",
+      "Radix Sort",
+      "Counting Sort"
+    ],
+    "pattern": "Sorting",
+    "key_idea": "Randomized quicksort that skips runs equal to the pivot on both sides before recursing.",
+    "time": "O(n log n) expected",
+    "space": "O(log n) expected",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0912. Sort an Array.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "922",
+    "title": "Sort Array By Parity II",
+    "slug": "sort-array-by-parity-ii",
+    "url": "https://leetcode.com/problems/sort-array-by-parity-ii/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Two Pointers",
+      "Sorting"
+    ],
+    "pattern": "Two Pointers",
+    "key_idea": "One pointer walks even slots past evens, another walks odd slots past odds; swap the misplaced values they find.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0922. Sort Array By Parity II.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "933",
+    "title": "Number of Recent Calls",
+    "slug": "number-of-recent-calls",
+    "url": "https://leetcode.com/problems/number-of-recent-calls/",
+    "difficulty": "Easy",
+    "tags": [
+      "Design",
+      "Queue",
+      "Data Stream"
+    ],
+    "pattern": "Design",
+    "key_idea": "Keep ping times in a queue and drop those older than t − 3000; the queue size is the answer.",
+    "time": "O(1) amortized",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0933. Number of Recent Calls.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "973",
+    "title": "K Closest Points to Origin",
+    "slug": "k-closest-points-to-origin",
+    "url": "https://leetcode.com/problems/k-closest-points-to-origin/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Math",
+      "Divide and Conquer",
+      "Geometry",
+      "Sorting",
+      "Heap (Priority Queue)",
+      "Quickselect",
+      "K-D Tree"
+    ],
+    "pattern": "Sorting",
+    "key_idea": "Quickselect (squared distance, index) pairs so the k smallest end up first, then copy those points.",
+    "time": "O(n) expected",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0973. K Closest Points to Origin.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "977",
+    "title": "Squares of a Sorted Array",
+    "slug": "squares-of-a-sorted-array",
+    "url": "https://leetcode.com/problems/squares-of-a-sorted-array/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Two Pointers",
+      "Sorting"
+    ],
+    "pattern": "Two Pointers",
+    "key_idea": "Compare absolute values at both ends and write the larger square into the answer from the back.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0977. Squares of a Sorted Array.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "987",
+    "title": "Vertical Order Traversal of a Binary Tree",
+    "slug": "vertical-order-traversal-of-a-binary-tree",
+    "url": "https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/",
+    "difficulty": "Hard",
+    "tags": [
+      "Hash Table",
+      "Tree",
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Sorting",
+      "Binary Tree"
+    ],
+    "pattern": "Trees",
+    "key_idea": "BFS records (row, value) per column in a TreeMap, then each column is sorted by row and value.",
+    "time": "O(n log n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/hard/0987. Vertical Order Traversal Binary Tree.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "990",
+    "title": "Satisfiability of Equality Equations",
+    "slug": "satisfiability-of-equality-equations",
+    "url": "https://leetcode.com/problems/satisfiability-of-equality-equations/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "String",
+      "Union-Find",
+      "Graph Theory"
+    ],
+    "pattern": "Union-Find",
+    "key_idea": "Union the variables of every == equation; then any != equation whose variables share a root fails.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0990. Satisfiability of Equality Equations.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "993",
+    "title": "Cousins in Binary Tree",
+    "slug": "cousins-in-binary-tree",
+    "url": "https://leetcode.com/problems/cousins-in-binary-tree/",
+    "difficulty": "Easy",
+    "tags": [
+      "Tree",
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Binary Tree"
+    ],
+    "pattern": "Trees",
+    "key_idea": "Level-order BFS: fail if x and y are children of one parent, succeed if both appear on the same level.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/0993. Cousins in Binary Tree.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "994",
+    "title": "Rotting Oranges",
+    "slug": "rotting-oranges",
+    "url": "https://leetcode.com/problems/rotting-oranges/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Breadth-First Search",
+      "Matrix"
+    ],
+    "pattern": "Graphs",
+    "key_idea": "Multi-source BFS from every rotten orange, one minute per level, until no fresh oranges remain.",
+    "time": "O(m·n)",
+    "space": "O(m·n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/0994. Rotting Oranges.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1009",
+    "title": "Complement of Base 10 Integer",
+    "slug": "complement-of-base-10-integer",
+    "url": "https://leetcode.com/problems/complement-of-base-10-integer/",
+    "difficulty": "Easy",
+    "tags": [
+      "Bit Manipulation"
+    ],
+    "pattern": "Bit Manipulation",
+    "key_idea": "Extract n's bits into a list, flip each one, and rebuild the number with powers of two.",
+    "time": "O(log n)",
+    "space": "O(log n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/1009. Complement of Base 10 Integer.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1011",
+    "title": "Capacity To Ship Packages Within D Days",
+    "slug": "capacity-to-ship-packages-within-d-days",
+    "url": "https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Binary Search"
+    ],
+    "pattern": "Binary Search",
+    "key_idea": "Binary search the capacity between the heaviest package and the total, greedily counting the days each capacity needs.",
+    "time": "O(n log S)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/1011. Capacity To Ship Packages Within D Days.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1046",
+    "title": "Last Stone Weight",
+    "slug": "last-stone-weight",
+    "url": "https://leetcode.com/problems/last-stone-weight/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Heap (Priority Queue)"
+    ],
+    "pattern": "Heap / Priority Queue",
+    "key_idea": "Max-heap of stones: smash the two heaviest and push back their difference until at most one remains.",
+    "time": "O(n log n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/1046. Last Stone Weight.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1089",
+    "title": "Duplicate Zeros",
+    "slug": "duplicate-zeros",
+    "url": "https://leetcode.com/problems/duplicate-zeros/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Two Pointers"
+    ],
+    "pattern": "Two Pointers",
+    "key_idea": "Count zeros, then copy from the back with a write index shifted by that count, writing zeros twice when in bounds.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/1089. Duplicate Zeros.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1109",
+    "title": "Corporate Flight Bookings",
+    "slug": "corporate-flight-bookings",
+    "url": "https://leetcode.com/problems/corporate-flight-bookings/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Prefix Sum"
+    ],
+    "pattern": "Prefix Sum",
+    "key_idea": "Difference array: add seats at first, subtract them after last, then a running total gives each flight's seats.",
+    "time": "O(n + m)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/1109. Corporate Flight Bookings.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1185",
+    "title": "Day of the Week",
+    "slug": "day-of-the-week",
+    "url": "https://leetcode.com/problems/day-of-the-week/",
+    "difficulty": "Easy",
+    "tags": [
+      "Math"
+    ],
+    "pattern": "Math",
+    "key_idea": "Count days elapsed since Friday 1971-01-01, including leap days, and pick the weekday by total mod 7.",
+    "time": "O(year − 1971)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/1185. Day of the Week.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1200",
+    "title": "Minimum Absolute Difference",
+    "slug": "minimum-absolute-difference",
+    "url": "https://leetcode.com/problems/minimum-absolute-difference/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Sorting"
+    ],
+    "pattern": "Sorting",
+    "key_idea": "Sort, then scan adjacent pairs, resetting the answer when a smaller gap appears and appending on ties.",
+    "time": "O(n log n)",
+    "space": "O(log n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/1200. Minimum Absolute Difference.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1202",
+    "title": "Smallest String With Swaps",
+    "slug": "smallest-string-with-swaps",
+    "url": "https://leetcode.com/problems/smallest-string-with-swaps/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "String",
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Union-Find",
+      "Sorting"
+    ],
+    "pattern": "Union-Find",
+    "key_idea": "Union swappable indices, give each component a min-heap of its chars, then rebuild by polling each index's component.",
+    "time": "O((n + m) log n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/1202. Smallest String With Swaps.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1207",
+    "title": "Unique Number of Occurrences",
+    "slug": "unique-number-of-occurrences",
+    "url": "https://leetcode.com/problems/unique-number-of-occurrences/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Hash Table"
+    ],
+    "pattern": "Arrays & Hashing",
+    "key_idea": "Count occurrences in a map; the counts must all be distinct, checked by putting them in a set.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/1207. Unique Number of Occurrences.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1217",
+    "title": "Minimum Cost to Move Chips to The Same Position",
+    "slug": "minimum-cost-to-move-chips-to-the-same-position",
+    "url": "https://leetcode.com/problems/minimum-cost-to-move-chips-to-the-same-position/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Math",
+      "Greedy"
+    ],
+    "pattern": "Math",
+    "key_idea": "Moving by 2 is free, so chips gather by parity; the cost is the smaller of the even and odd counts.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/1217. Minimum Cost to Move Chips to The Same Position.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1304",
+    "title": "Find N Unique Integers Sum up to Zero",
+    "slug": "find-n-unique-integers-sum-up-to-zero",
+    "url": "https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Math"
+    ],
+    "pattern": "Math",
+    "key_idea": "Write the pairs −i and i for i from 1 to n/2, plus a 0 when n is odd.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/1304. Find N Unique Integers Sum up to Zero.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1306",
+    "title": "Jump Game III",
+    "slug": "jump-game-iii",
+    "url": "https://leetcode.com/problems/jump-game-iii/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Depth-First Search",
+      "Breadth-First Search"
+    ],
+    "pattern": "Graphs",
+    "key_idea": "DFS from start, marking visited indices by negating them; succeed on reaching a zero.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/1306. Jump Game III.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1337",
+    "title": "The K Weakest Rows in a Matrix",
+    "slug": "the-k-weakest-rows-in-a-matrix",
+    "url": "https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Binary Search",
+      "Sorting",
+      "Heap (Priority Queue)",
+      "Matrix"
+    ],
+    "pattern": "Heap / Priority Queue",
+    "key_idea": "Count each row's leading soldiers, then poll a min-heap ordered by (count, index) k times.",
+    "time": "O(m·n + m log m)",
+    "space": "O(m)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/1337. The K Weakest Rows in a Matrix.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1345",
+    "title": "Jump Game IV",
+    "slug": "jump-game-iv",
+    "url": "https://leetcode.com/problems/jump-game-iv/",
+    "difficulty": "Hard",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Breadth-First Search"
+    ],
+    "pattern": "Graphs",
+    "key_idea": "BFS over indices using i ± 1 and same-value portals, deleting each value's portal list after its first use.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/hard/1345. Jump Game IV.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1365",
+    "title": "How Many Numbers Are Smaller Than the Current Number",
+    "slug": "how-many-numbers-are-smaller-than-the-current-number",
+    "url": "https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Sorting",
+      "Counting Sort"
+    ],
+    "pattern": "Sorting",
+    "key_idea": "Sort a copy; each value's first index in the sorted copy is how many numbers are smaller than it.",
+    "time": "O(n log n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/1365. How Many Numbers Are Smaller Than the Current Number.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1389",
+    "title": "Create Target Array in the Given Order",
+    "slug": "create-target-array-in-the-given-order",
+    "url": "https://leetcode.com/problems/create-target-array-in-the-given-order/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Simulation"
+    ],
+    "pattern": "Simulation",
+    "key_idea": "Insert each nums[i] at position index[i] of an ArrayList, then copy the list into an array.",
+    "time": "O(n^2)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/1389. Create Target Array in the Given Order.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1403",
+    "title": "Minimum Subsequence in Non-Increasing Order",
+    "slug": "minimum-subsequence-in-non-increasing-order",
+    "url": "https://leetcode.com/problems/minimum-subsequence-in-non-increasing-order/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Greedy",
+      "Sorting"
+    ],
+    "pattern": "Greedy",
+    "key_idea": "Sort, then take the largest values until their sum exceeds the sum of the rest.",
+    "time": "O(n log n)",
+    "space": "O(log n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/1403. Minimum Subsequence in Non-Increasing Order.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1423",
+    "title": "Maximum Points You Can Obtain from Cards",
+    "slug": "maximum-points-you-can-obtain-from-cards",
+    "url": "https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Sliding Window",
+      "Prefix Sum"
+    ],
+    "pattern": "Sliding Window",
+    "key_idea": "Start with the first k cards, then trade the prefix's last card for the next card from the end, k times.",
+    "time": "O(k)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/1423. Maximum Points You Can Obtain from Cards.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1438",
+    "title": "Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit",
+    "slug": "longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit",
+    "url": "https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Queue",
+      "Sliding Window",
+      "Heap (Priority Queue)",
+      "Ordered Set",
+      "Monotonic Queue"
+    ],
+    "pattern": "Sliding Window",
+    "key_idea": "Two monotonic deques track the window's max and min; advance left while max − min exceeds limit.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1464",
+    "title": "Maximum Product of Two Elements in an Array",
+    "slug": "maximum-product-of-two-elements-in-an-array",
+    "url": "https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Sorting",
+      "Heap (Priority Queue)"
+    ],
+    "pattern": "Heap / Priority Queue",
+    "key_idea": "Push every number into a max-heap, pop the two largest, and multiply each minus one.",
+    "time": "O(n log n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/1464. Maximum Product of Two Elements in an Array.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1470",
+    "title": "Shuffle the Array",
+    "slug": "shuffle-the-array",
+    "url": "https://leetcode.com/problems/shuffle-the-array/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array"
+    ],
+    "pattern": "Arrays & Hashing",
+    "key_idea": "Interleave the halves: ans[2i] = nums[i] and ans[2i + 1] = nums[i + n].",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/1470. Shuffle the Array.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1472",
+    "title": "Design Browser History",
+    "slug": "design-browser-history",
+    "url": "https://leetcode.com/problems/design-browser-history/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Linked List",
+      "Stack",
+      "Design",
+      "Doubly-Linked List",
+      "Data Stream"
+    ],
+    "pattern": "Design",
+    "key_idea": "Doubly linked list of pages: visit cuts off the forward chain, and back or forward walk up to steps nodes.",
+    "time": "O(steps) per move",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/1472. Design Browser History.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1488",
+    "title": "Avoid Flood in The City",
+    "slug": "avoid-flood-in-the-city",
+    "url": "https://leetcode.com/problems/avoid-flood-in-the-city/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Binary Search",
+      "Greedy",
+      "Heap (Priority Queue)"
+    ],
+    "pattern": "Greedy",
+    "key_idea": "Remember each lake's last rain day; when it rains there again, dry it on the first later dry day from a TreeSet.",
+    "time": "O(n log n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/1488. Avoid Flood in The City.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1507",
+    "title": "Reformat Date",
+    "slug": "reformat-date",
+    "url": "https://leetcode.com/problems/reformat-date/",
+    "difficulty": "Easy",
+    "tags": [
+      "String"
+    ],
+    "pattern": "Strings",
+    "key_idea": "Split into day, month and year; map the month name to its number, strip the day's suffix, zero-pad both.",
+    "time": "O(1)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/1507. Reformat Date.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1523",
+    "title": "Count Odd Numbers in an Interval Range",
+    "slug": "count-odd-numbers-in-an-interval-range",
+    "url": "https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/",
+    "difficulty": "Easy",
+    "tags": [
+      "Math"
+    ],
+    "pattern": "Math",
+    "key_idea": "(high − low) / 2 odd numbers fit in the gap; add one more if either end is odd.",
+    "time": "O(1)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/1523. Count Odd Numbers in an Interval Range.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1572",
+    "title": "Matrix Diagonal Sum",
+    "slug": "matrix-diagonal-sum",
+    "url": "https://leetcode.com/problems/matrix-diagonal-sum/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Matrix"
+    ],
+    "pattern": "Arrays & Hashing",
+    "key_idea": "Add mat[i][i] and mat[i][n − 1 − i] for every row, skipping the second when it is the same cell.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/1572. Matrix Diagonal Sum.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1582",
+    "title": "Special Positions in a Binary Matrix",
+    "slug": "special-positions-in-a-binary-matrix",
+    "url": "https://leetcode.com/problems/special-positions-in-a-binary-matrix/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Matrix"
+    ],
+    "pattern": "Arrays & Hashing",
+    "key_idea": "Count the 1s in every row and column, then count cells holding 1 whose row and column counts are both 1.",
+    "time": "O(m·n)",
+    "space": "O(m + n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/1582. Special Positions in a Binary Matrix.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1592",
+    "title": "Rearrange Spaces Between Words",
+    "slug": "rearrange-spaces-between-words",
+    "url": "https://leetcode.com/problems/rearrange-spaces-between-words/",
+    "difficulty": "Easy",
+    "tags": [
+      "String"
+    ],
+    "pattern": "Strings",
+    "key_idea": "Split into words and count spaces; put total / (words − 1) spaces between words and the remainder at the end.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/1592. Rearrange Spaces Between Words.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1665",
+    "title": "Minimum Initial Energy to Finish Tasks",
+    "slug": "minimum-initial-energy-to-finish-tasks",
+    "url": "https://leetcode.com/problems/minimum-initial-energy-to-finish-tasks/",
+    "difficulty": "Hard",
+    "tags": [
+      "Array",
+      "Greedy",
+      "Sorting"
+    ],
+    "pattern": "Greedy",
+    "key_idea": "Sort by minimum − actual descending, then go backward from the last task keeping max(energy + actual, minimum).",
+    "time": "O(n log n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/hard/1665. Minimum Initial Energy to Finish Tasks.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1674",
+    "title": "Minimum Moves to Make Array Complementary",
+    "slug": "minimum-moves-to-make-array-complementary",
+    "url": "https://leetcode.com/problems/minimum-moves-to-make-array-complementary/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Prefix Sum"
+    ],
+    "pattern": "Prefix Sum",
+    "key_idea": "Per pair, mark on a difference array over target sums where it costs 0, 1 or 2 moves; prefix-sum, take the minimum.",
+    "time": "O(n + limit)",
+    "space": "O(limit)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/1674. Minimum Moves to Make Array Complementary.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1716",
+    "title": "Calculate Money in Leetcode Bank",
+    "slug": "calculate-money-in-leetcode-bank",
+    "url": "https://leetcode.com/problems/calculate-money-in-leetcode-bank/",
+    "difficulty": "Easy",
+    "tags": [
+      "Math"
+    ],
+    "pattern": "Math",
+    "key_idea": "Full weeks form an arithmetic series: recurse on the earlier weeks and add the partial week with a closed formula.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/1716. Calculate Money in Leetcode Bank.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1748",
+    "title": "Sum of Unique Elements",
+    "slug": "sum-of-unique-elements",
+    "url": "https://leetcode.com/problems/sum-of-unique-elements/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Counting"
+    ],
+    "pattern": "Arrays & Hashing",
+    "key_idea": "Count every number in a map, then sum the keys whose count is 1.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/1748. Sum of Unique Elements.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1775",
+    "title": "Equal Sum Arrays With Minimum Number of Operations",
+    "slug": "equal-sum-arrays-with-minimum-number-of-operations",
+    "url": "https://leetcode.com/problems/equal-sum-arrays-with-minimum-number-of-operations/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Greedy",
+      "Counting"
+    ],
+    "pattern": "Greedy",
+    "key_idea": "Collect each element's possible gain toward closing the sum gap in a max-heap and apply the largest gains first.",
+    "time": "O((m + n) log(m + n))",
+    "space": "O(m + n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/1775. Equal Sum Arrays With Minimum Number of Operations.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1792",
+    "title": "Maximum Average Pass Ratio",
+    "slug": "maximum-average-pass-ratio",
+    "url": "https://leetcode.com/problems/maximum-average-pass-ratio/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Greedy",
+      "Heap (Priority Queue)"
+    ],
+    "pattern": "Heap / Priority Queue",
+    "key_idea": "A max-heap ordered by the ratio gain of one more passing student; give each extra student to the top class.",
+    "time": "O((n + k) log n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/1792. Maximum Average Pass Ratio.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1854",
+    "title": "Maximum Population Year",
+    "slug": "maximum-population-year",
+    "url": "https://leetcode.com/problems/maximum-population-year/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Counting",
+      "Prefix Sum"
+    ],
+    "pattern": "Prefix Sum",
+    "key_idea": "Difference array over 1950–2050: +1 at birth, −1 at death; a running total finds the earliest peak year.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/1854. Maximum Population Year.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1861",
+    "title": "Rotating the Box",
+    "slug": "rotating-the-box",
+    "url": "https://leetcode.com/problems/rotating-the-box/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Two Pointers",
+      "Matrix"
+    ],
+    "pattern": "Simulation",
+    "key_idea": "In each row let stones fall right toward the nearest obstacle, then write the rows into a rotated cols × rows grid.",
+    "time": "O(m·n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/1861. Rotating the Box.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1903",
+    "title": "Largest Odd Number in String",
+    "slug": "largest-odd-number-in-string",
+    "url": "https://leetcode.com/problems/largest-odd-number-in-string/",
+    "difficulty": "Easy",
+    "tags": [
+      "Math",
+      "String",
+      "Greedy"
+    ],
+    "pattern": "Strings",
+    "key_idea": "Return the prefix that ends at the rightmost odd digit, or an empty string if there is none.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/1903. Largest Odd Number in String.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1913",
+    "title": "Maximum Product Difference Between Two Pairs",
+    "slug": "maximum-product-difference-between-two-pairs",
+    "url": "https://leetcode.com/problems/maximum-product-difference-between-two-pairs/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Sorting",
+      "Quicksort"
+    ],
+    "pattern": "Sorting",
+    "key_idea": "Counting sort the values; the answer is the product of the two largest minus the product of the two smallest.",
+    "time": "O(n + V)",
+    "space": "O(V)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/1913. Maximum Product Difference Between Two Pairs.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1914",
+    "title": "Cyclically Rotating a Grid",
+    "slug": "cyclically-rotating-a-grid",
+    "url": "https://leetcode.com/problems/cyclically-rotating-a-grid/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Matrix",
+      "Simulation"
+    ],
+    "pattern": "Simulation",
+    "key_idea": "Peel each layer into a list, rotate the list by k mod its length, and write it back in the same order.",
+    "time": "O(m·n)",
+    "space": "O(m + n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/1914. Cyclically Rotating a Grid.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1929",
+    "title": "Concatenation of Array",
+    "slug": "concatenation-of-array",
+    "url": "https://leetcode.com/problems/concatenation-of-array/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Simulation"
+    ],
+    "pattern": "Arrays & Hashing",
+    "key_idea": "Fill an array of length 2n with nums[i mod n].",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/1929. Concatenation of Array.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1941",
+    "title": "Check if All Characters Have Equal Number of Occurrences",
+    "slug": "check-if-all-characters-have-equal-number-of-occurrences",
+    "url": "https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/",
+    "difficulty": "Easy",
+    "tags": [
+      "Hash Table",
+      "String",
+      "Counting"
+    ],
+    "pattern": "Arrays & Hashing",
+    "key_idea": "Count every char in a map and check that every count equals the first char's count.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/1941. Check if All Characters Have Equal Number of Occurrences.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1952",
+    "title": "Three Divisors",
+    "slug": "three-divisors",
+    "url": "https://leetcode.com/problems/three-divisors/",
+    "difficulty": "Easy",
+    "tags": [
+      "Math",
+      "Enumeration",
+      "Number Theory",
+      "Prime Factorization",
+      "Sieve Theory"
+    ],
+    "pattern": "Math",
+    "key_idea": "Count the divisors of n below n; n has exactly three divisors when that count is two.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/1952. Three Divisors.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1967",
+    "title": "Number of Strings That Appear as Substrings in Word",
+    "slug": "number-of-strings-that-appear-as-substrings-in-word",
+    "url": "https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "String"
+    ],
+    "pattern": "Strings",
+    "key_idea": "Count the patterns that word.contains finds.",
+    "time": "O(n·P)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/1967. Number of Strings That Appear as Substrings in Word.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1979",
+    "title": "Find Greatest Common Divisor of Array",
+    "slug": "find-greatest-common-divisor-of-array",
+    "url": "https://leetcode.com/problems/find-greatest-common-divisor-of-array/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Math",
+      "Number Theory",
+      "Euclidean Algorithm",
+      "Greatest Common Divisor"
+    ],
+    "pattern": "Math",
+    "key_idea": "Find the minimum and maximum, then run Euclid's algorithm on the pair.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/1979. Find Greatest Common Divisor of Array.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "1984",
+    "title": "Minimum Difference Between Highest and Lowest of K Scores",
+    "slug": "minimum-difference-between-highest-and-lowest-of-k-scores",
+    "url": "https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Sliding Window",
+      "Sorting"
+    ],
+    "pattern": "Sliding Window",
+    "key_idea": "Sort, then slide a window of k values and minimize its last minus first value.",
+    "time": "O(n log n)",
+    "space": "O(log n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/1984. Minimum Difference Between Highest and Lowest of K Scores.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "2000",
+    "title": "Reverse Prefix of Word",
+    "slug": "reverse-prefix-of-word",
+    "url": "https://leetcode.com/problems/reverse-prefix-of-word/",
+    "difficulty": "Easy",
+    "tags": [
+      "Two Pointers",
+      "String",
+      "Stack"
+    ],
+    "pattern": "Strings",
+    "key_idea": "Find the first ch, reverse the prefix up to and including it, and append the rest.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/2000. Reverse Prefix of Word.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "2022",
+    "title": "Convert 1D Array Into 2D Array",
+    "slug": "convert-1d-array-into-2d-array",
+    "url": "https://leetcode.com/problems/convert-1d-array-into-2d-array/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Matrix",
+      "Simulation"
+    ],
+    "pattern": "Arrays & Hashing",
+    "key_idea": "If the sizes match, place original[i] at row i / n, column i mod n.",
+    "time": "O(m·n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/2022. Convert 1D Array Into 2D Array.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "2099",
+    "title": "Find Subsequence of Length K With the Largest Sum",
+    "slug": "find-subsequence-of-length-k-with-the-largest-sum",
+    "url": "https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Sorting",
+      "Heap (Priority Queue)"
+    ],
+    "pattern": "Heap / Priority Queue",
+    "key_idea": "Keep the k largest (value, index) pairs in a min-heap, then sort them by index to restore the original order.",
+    "time": "O(n log k)",
+    "space": "O(k)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/2099. Find Subsequence of Length K With the Largest Sum.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "2161",
+    "title": "Partition Array According to Given Pivot",
+    "slug": "partition-array-according-to-given-pivot",
+    "url": "https://leetcode.com/problems/partition-array-according-to-given-pivot/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Two Pointers",
+      "Simulation"
+    ],
+    "pattern": "Two Pointers",
+    "key_idea": "With a write pointer, place the smaller values in order, then every pivot copy, then a second pass of larger values.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/2161. Partition Array According to Given Pivot.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "2164",
+    "title": "Sort Even and Odd Indices Independently",
+    "slug": "sort-even-and-odd-indices-independently",
+    "url": "https://leetcode.com/problems/sort-even-and-odd-indices-independently/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Sorting"
+    ],
+    "pattern": "Sorting",
+    "key_idea": "Split the values at even and odd indices, sort evens ascending and odds descending, then write them back.",
+    "time": "O(n log n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/2164. Sort Even and Odd Indices Independently.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "2180",
+    "title": "Count Integers With Even Digit Sum",
+    "slug": "count-integers-with-even-digit-sum",
+    "url": "https://leetcode.com/problems/count-integers-with-even-digit-sum/",
+    "difficulty": "Easy",
+    "tags": [
+      "Math",
+      "Simulation"
+    ],
+    "pattern": "Math",
+    "key_idea": "Brute force: sum the digits of every number up to num and count the even sums.",
+    "time": "O(num log num)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/2180. Count Integers With Even Digit Sum.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "2316",
+    "title": "Count Unreachable Pairs of Nodes in an Undirected Graph",
+    "slug": "count-unreachable-pairs-of-nodes-in-an-undirected-graph",
+    "url": "https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/",
+    "difficulty": "Medium",
+    "tags": [
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Union-Find",
+      "Graph Theory"
+    ],
+    "pattern": "Union-Find",
+    "key_idea": "Union by size over the edges; each component of size s pairs with every node not counted yet, adding s × remaining.",
+    "time": "O(n + E)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/2316. Count Unreachable Pairs of Nodes in an Undirected Graph.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "2335",
+    "title": "Minimum Amount of Time to Fill Cups",
+    "slug": "minimum-amount-of-time-to-fill-cups",
+    "url": "https://leetcode.com/problems/minimum-amount-of-time-to-fill-cups/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Greedy",
+      "Sorting",
+      "Heap (Priority Queue)"
+    ],
+    "pattern": "Heap / Priority Queue",
+    "key_idea": "Each second, fill one cup from each of the two largest remaining amounts in a max-heap; a lone amount adds itself.",
+    "time": "O(S)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/2335. Minimum Amount of Time to Fill Cups.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "2404",
+    "title": "Most Frequent Even Element",
+    "slug": "most-frequent-even-element",
+    "url": "https://leetcode.com/problems/most-frequent-even-element/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Counting"
+    ],
+    "pattern": "Arrays & Hashing",
+    "key_idea": "Count even values in a map, then pick the highest count, breaking ties toward the smaller value.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/2404. Most Frequent Even Element.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "2415",
+    "title": "Reverse Odd Levels of Binary Tree",
+    "slug": "reverse-odd-levels-of-binary-tree",
+    "url": "https://leetcode.com/problems/reverse-odd-levels-of-binary-tree/",
+    "difficulty": "Medium",
+    "tags": [
+      "Tree",
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Binary Tree"
+    ],
+    "pattern": "Trees",
+    "key_idea": "Level-order BFS collects each level's nodes; on odd levels swap values from both ends inward.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/2415. Reverse Odd Levels of Binary Tree.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "2461",
+    "title": "Maximum Sum of Distinct Subarrays With Length K",
+    "slug": "maximum-sum-of-distinct-subarrays-with-length-k",
+    "url": "https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Sliding Window"
+    ],
+    "pattern": "Sliding Window",
+    "key_idea": "Keep a set of the window's values: shrink past any duplicate; at size k, record the sum and drop the leftmost.",
+    "time": "O(n)",
+    "space": "O(k)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/2461. Maximum Sum of Distinct Subarrays With Length K.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "2465",
+    "title": "Number of Distinct Averages",
+    "slug": "number-of-distinct-averages",
+    "url": "https://leetcode.com/problems/number-of-distinct-averages/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Two Pointers",
+      "Sorting"
+    ],
+    "pattern": "Two Pointers",
+    "key_idea": "Sort, pair the smallest with the largest while moving inward, and count the distinct pair sums in a set.",
+    "time": "O(n log n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/2465. Number of Distinct Averages.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "2500",
+    "title": "Delete Greatest Value in Each Row",
+    "slug": "delete-greatest-value-in-each-row",
+    "url": "https://leetcode.com/problems/delete-greatest-value-in-each-row/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Sorting",
+      "Heap (Priority Queue)",
+      "Matrix",
+      "Simulation"
+    ],
+    "pattern": "Sorting",
+    "key_idea": "Sort each row, then for each column from the right add the maximum across all rows.",
+    "time": "O(m·n log n)",
+    "space": "O(log n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/2500. Delete Greatest Value in Each Row.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "2536",
+    "title": "Increment Submatrices by One",
+    "slug": "increment-submatrices-by-one",
+    "url": "https://leetcode.com/problems/increment-submatrices-by-one/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Matrix",
+      "Prefix Sum"
+    ],
+    "pattern": "Prefix Sum",
+    "key_idea": "2D difference array: mark four corners per query, then a 2D prefix sum yields every cell's count.",
+    "time": "O(n^2 + q)",
+    "space": "O(n^2)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/2536. Increment Submatrices by One.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "2540",
+    "title": "Minimum Common Value",
+    "slug": "minimum-common-value",
+    "url": "https://leetcode.com/problems/minimum-common-value/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Two Pointers",
+      "Binary Search"
+    ],
+    "pattern": "Two Pointers",
+    "key_idea": "Walk both sorted arrays, advancing the side with the smaller value; the first equal pair is the answer.",
+    "time": "O(m + n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/2540. Minimum Common Value.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "2553",
+    "title": "Separate the Digits in an Array",
+    "slug": "separate-the-digits-in-an-array",
+    "url": "https://leetcode.com/problems/separate-the-digits-in-an-array/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Simulation"
+    ],
+    "pattern": "Math",
+    "key_idea": "Peel each number's digits with mod 10, inserting at the front to keep their order, and flatten them into one array.",
+    "time": "O(D)",
+    "space": "O(D)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/2553. Separate the Digits in an Array.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "2657",
+    "title": "Find the Prefix Common Array of Two Arrays",
+    "slug": "find-the-prefix-common-array-of-two-arrays",
+    "url": "https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Bit Manipulation"
+    ],
+    "pattern": "Arrays & Hashing",
+    "key_idea": "Walk both permutations, adding each value to a seen set; a value already seen means it has just become common.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/2657. Find the Prefix Common Array of Two Arrays.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "2770",
+    "title": "Maximum Number of Jumps to Reach the Last Index",
+    "slug": "maximum-number-of-jumps-to-reach-the-last-index",
+    "url": "https://leetcode.com/problems/maximum-number-of-jumps-to-reach-the-last-index/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Dynamic Programming"
+    ],
+    "pattern": "Dynamic Programming",
+    "key_idea": "dp[j] = most jumps to reach j: try every earlier reachable i within target of nums[j] and take dp[i] + 1.",
+    "time": "O(n^2)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/2770. Maximum Number of Jumps to Reach the Last Index.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "2810",
+    "title": "Faulty Keyboard",
+    "slug": "faulty-keyboard",
+    "url": "https://leetcode.com/problems/faulty-keyboard/",
+    "difficulty": "Easy",
+    "tags": [
+      "String",
+      "Simulation"
+    ],
+    "pattern": "Simulation",
+    "key_idea": "Append chars to a StringBuilder and reverse the whole builder on every 'i'.",
+    "time": "O(n^2)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/2810. Faulty Keyboard.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "2833",
+    "title": "Furthest Point From Origin",
+    "slug": "furthest-point-from-origin",
+    "url": "https://leetcode.com/problems/furthest-point-from-origin/",
+    "difficulty": "Easy",
+    "tags": [
+      "String",
+      "Counting"
+    ],
+    "pattern": "Greedy",
+    "key_idea": "Send every '_' in the dominant direction: the answer is |R count − L count| plus the '_' count.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/2833. Furthest Point From Origin.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "2974",
+    "title": "Minimum Number Game",
+    "slug": "minimum-number-game",
+    "url": "https://leetcode.com/problems/minimum-number-game/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Sorting",
+      "Heap (Priority Queue)",
+      "Simulation"
+    ],
+    "pattern": "Heap / Priority Queue",
+    "key_idea": "Each round, pop the two smallest from a min-heap and write them back in swapped order.",
+    "time": "O(n log n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/2974. Minimum Number Game.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "3005",
+    "title": "Count Elements With Maximum Frequency",
+    "slug": "count-elements-with-maximum-frequency",
+    "url": "https://leetcode.com/problems/count-elements-with-maximum-frequency/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Counting"
+    ],
+    "pattern": "Arrays & Hashing",
+    "key_idea": "Count frequencies, then add up the frequencies of every element tied for the maximum.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/3005. Count Elements With Maximum Frequency.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "3065",
+    "title": "Minimum Operations to Exceed Threshold Value I",
+    "slug": "minimum-operations-to-exceed-threshold-value-i",
+    "url": "https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-i/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array"
+    ],
+    "pattern": "Arrays & Hashing",
+    "key_idea": "Count the elements below k; each one takes one removal.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/3065. Minimum Operations to Exceed Threshold Value I.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "3248",
+    "title": "Snake in Matrix",
+    "slug": "snake-in-matrix",
+    "url": "https://leetcode.com/problems/snake-in-matrix/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "String",
+      "Simulation"
+    ],
+    "pattern": "Simulation",
+    "key_idea": "Track the cell number directly: UP and DOWN move it by n, LEFT and RIGHT by 1.",
+    "time": "O(m)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/3248. Snake in Matrix.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "3258",
+    "title": "Count Substrings That Satisfy K-Constraint I",
+    "slug": "count-substrings-that-satisfy-k-constraint-i",
+    "url": "https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-i/",
+    "difficulty": "Easy",
+    "tags": [
+      "String",
+      "Sliding Window"
+    ],
+    "pattern": "Strings",
+    "key_idea": "Brute force every substring, counting zeros and ones as it grows, and keep those with either count at most k.",
+    "time": "O(n^2)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/3258. Count Substrings That Satisfy KConstraint I.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "3582",
+    "title": "Generate Tag for Video Caption",
+    "slug": "generate-tag-for-video-caption",
+    "url": "https://leetcode.com/problems/generate-tag-for-video-caption/",
+    "difficulty": "Easy",
+    "tags": [
+      "String",
+      "Simulation"
+    ],
+    "pattern": "Strings",
+    "key_idea": "Split into words, lowercase the first, capitalize the rest, prefix '#', and cut the result to 100 chars.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/3582. Generate Tag for Video Caption.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "3629",
+    "title": "Minimum Jumps to Reach End via Prime Teleportation",
+    "slug": "minimum-jumps-to-reach-end-via-prime-teleportation",
+    "url": "https://leetcode.com/problems/minimum-jumps-to-reach-end-via-prime-teleportation/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Math",
+      "Breadth-First Search",
+      "Number Theory"
+    ],
+    "pattern": "Graphs",
+    "key_idea": "BFS over indices: step ±1, and from a prime value jump once to every index whose value it divides.",
+    "time": "O(n·√M)",
+    "space": "O(n log M)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/3629. Minimum Jumps to Reach End via Prime Teleportation.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "3658",
+    "title": "GCD of Odd and Even Sums",
+    "slug": "gcd-of-odd-and-even-sums",
+    "url": "https://leetcode.com/problems/gcd-of-odd-and-even-sums/",
+    "difficulty": "Easy",
+    "tags": [
+      "Math",
+      "Number Theory"
+    ],
+    "pattern": "Math",
+    "key_idea": "The odd sum is n² and the even sum is n(n + 1), so their GCD is always n.",
+    "time": "O(1)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/3658. GCD of Odd and Even Sums.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "3660",
+    "title": "Jump Game IX",
+    "slug": "jump-game-ix",
+    "url": "https://leetcode.com/problems/jump-game-ix/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Dynamic Programming"
+    ],
+    "pattern": "Stack",
+    "key_idea": "Monotonic stack of blocks: a smaller value merges with larger earlier blocks; every index gets its block's maximum.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/3660. Jump Game IX.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "3917",
+    "title": "Count Indices With Opposite Parity",
+    "slug": "count-indices-with-opposite-parity",
+    "url": "https://leetcode.com/problems/count-indices-with-opposite-parity/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array"
+    ],
+    "pattern": "Arrays & Hashing",
+    "key_idea": "Brute force: for each index, count the elements from it onward with the opposite parity.",
+    "time": "O(n^2)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/3917. Count Indices With Opposite Parity.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "3918",
+    "title": "Sum of Primes Between Number and Its Reverse",
+    "slug": "sum-of-primes-between-number-and-its-reverse",
+    "url": "https://leetcode.com/problems/sum-of-primes-between-number-and-its-reverse/",
+    "difficulty": "Medium",
+    "tags": [
+      "Math",
+      "Number Theory"
+    ],
+    "pattern": "Math",
+    "key_idea": "Reverse n's digits, then sum every prime between the two numbers using 6k ± 1 trial division.",
+    "time": "O(R·√R)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/3918. Sum of Primes Between Number and Its Reverse.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "3925",
+    "title": "Concatenate Array With Reverse",
+    "slug": "concatenate-array-with-reverse",
+    "url": "https://leetcode.com/problems/concatenate-array-with-reverse/",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Simulation"
+    ],
+    "pattern": "Arrays & Hashing",
+    "key_idea": "Copy nums into the first half, then copy it again in reverse into the second half.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/3925. Concatenate Array With Reverse.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "3926",
+    "title": "Count Valid Word Occurrences",
+    "slug": "count-valid-word-occurrences",
+    "url": "https://leetcode.com/problems/count-valid-word-occurrences/",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "String",
+      "Counting"
+    ],
+    "pattern": "Strings",
+    "key_idea": "Join the chunks, split on whitespace, trim edge hyphens, split on double hyphens, and count words in a map.",
+    "time": "O(L + q)",
+    "space": "O(L)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/medium/3926. Count Valid Word Occurrences.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "3931",
+    "title": "Check Adjacent Digit Differences",
+    "slug": "check-adjacent-digit-differences",
+    "url": "https://leetcode.com/problems/check-adjacent-digit-differences/",
+    "difficulty": "Easy",
+    "tags": [
+      "String"
+    ],
+    "pattern": "Strings",
+    "key_idea": "Check each adjacent digit pair and fail as soon as two neighbours differ by more than 2.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/3931. Check Adjacent Digit Differences.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "3932",
+    "title": "Count K-th Roots in a Range",
+    "slug": "count-k-th-roots-in-a-range",
+    "url": "https://leetcode.com/problems/count-k-th-roots-in-a-range/",
+    "difficulty": "Medium",
+    "tags": [
+      "Math",
+      "Binary Search"
+    ],
+    "pattern": "Math",
+    "key_idea": "Count powers i^k, for i from 0 upward, that land in [l, r], stopping once past r; k = 1 is special-cased.",
+    "time": "O(r^(1/k))",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/3932. Count K-th Roots in a Range.java"
+  },
+  {
+    "platform": "leetcode",
+    "id": "3959",
+    "title": "Check Good Integer",
+    "slug": "check-good-integer",
+    "url": "https://leetcode.com/problems/check-good-integer/",
+    "difficulty": "Easy",
+    "tags": [
+      "Math",
+      "Simulation"
+    ],
+    "pattern": "Math",
+    "key_idea": "Sum the digits and the squared digits in two passes; n is good when the difference is at least 50.",
+    "time": "O(log n)",
+    "space": "O(1)",
+    "language": "Java",
+    "path": "LeetCode_Problems/Java/easy/3959. Check Good Integer.java"
+  },
+  {
+    "platform": "codeforces",
+    "id": "1A",
+    "title": "Theatre Square",
+    "slug": null,
+    "url": "https://codeforces.com/problemset/problem/1/A",
+    "difficulty": 1000,
+    "tags": [
+      "math"
+    ],
+    "pattern": "Math",
+    "key_idea": "Cover each side with ceil(side / a) flagstones and multiply the two counts.",
+    "time": "O(1)",
+    "space": "O(1)",
+    "language": "C++",
+    "path": "Codeforces_Problems/ProblemSet/1A.cpp"
+  },
+  {
+    "platform": "codeforces",
+    "id": "4A",
+    "title": "Watermelon",
+    "slug": null,
+    "url": "https://codeforces.com/problemset/problem/4/A",
+    "difficulty": 800,
+    "tags": [
+      "brute force",
+      "math"
+    ],
+    "pattern": "Math",
+    "key_idea": "The melon splits into two positive even parts exactly when w is even and greater than 2.",
+    "time": "O(1)",
+    "space": "O(1)",
+    "language": "C++",
+    "path": "Codeforces_Problems/ProblemSet/4A.cpp"
+  },
+  {
+    "platform": "codeforces",
+    "id": "4C",
+    "title": "Registration System",
+    "slug": null,
+    "url": "https://codeforces.com/problemset/problem/4/C",
+    "difficulty": 1300,
+    "tags": [
+      "data structures",
+      "hashing",
+      "implementation"
+    ],
+    "pattern": "Arrays & Hashing",
+    "key_idea": "A hash map of name → times seen; print OK on first sight, otherwise the name plus its current count.",
+    "time": "O(n·L)",
+    "space": "O(n·L)",
+    "language": "C++",
+    "path": "Codeforces_Problems/ProblemSet/4C.cpp"
+  },
+  {
+    "platform": "codeforces",
+    "id": "25A",
+    "title": "IQ test",
+    "slug": null,
+    "url": "https://codeforces.com/problemset/problem/25/A",
+    "difficulty": 1300,
+    "tags": [
+      "brute force"
+    ],
+    "pattern": "Arrays & Hashing",
+    "key_idea": "Count odds and evens, remembering the last index of each; the parity seen only once marks the answer.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "C++",
+    "path": "Codeforces_Problems/ProblemSet/25A.cpp"
+  },
+  {
+    "platform": "codeforces",
+    "id": "58A",
+    "title": "Chat room",
+    "slug": null,
+    "url": "https://codeforces.com/problemset/problem/58/A",
+    "difficulty": 1000,
+    "tags": [
+      "greedy",
+      "strings"
+    ],
+    "pattern": "Two Pointers",
+    "key_idea": "Scan the word, advancing through the letters of \"hello\" on each match; succeed once all five match.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "C++",
+    "path": "Codeforces_Problems/ProblemSet/58A.cpp"
+  },
+  {
+    "platform": "codeforces",
+    "id": "69A",
+    "title": "Young Physicist",
+    "slug": null,
+    "url": "https://codeforces.com/problemset/problem/69/A",
+    "difficulty": 1000,
+    "tags": [
+      "implementation",
+      "math"
+    ],
+    "pattern": "Math",
+    "key_idea": "Sum the force vectors coordinate by coordinate; the body is in equilibrium when all three sums are 0.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "C++",
+    "path": "Codeforces_Problems/ProblemSet/69A.cpp"
+  },
+  {
+    "platform": "codeforces",
+    "id": "71A",
+    "title": "Way Too Long Words",
+    "slug": null,
+    "url": "https://codeforces.com/problemset/problem/71/A",
+    "difficulty": 800,
+    "tags": [
+      "strings"
+    ],
+    "pattern": "Strings",
+    "key_idea": "A word longer than 10 becomes its first letter, the number of letters between, and its last letter.",
+    "time": "O(L)",
+    "space": "O(L)",
+    "language": "C++",
+    "path": "Codeforces_Problems/ProblemSet/71A.cpp"
+  },
+  {
+    "platform": "codeforces",
+    "id": "118A",
+    "title": "String Task",
+    "slug": null,
+    "url": "https://codeforces.com/problemset/problem/118/A",
+    "difficulty": 1000,
+    "tags": [
+      "implementation",
+      "strings"
+    ],
+    "pattern": "Strings",
+    "key_idea": "Lowercase each letter, drop vowels (y included), and put '.' before every consonant.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "C++",
+    "path": "Codeforces_Problems/ProblemSet/118A.cpp"
+  },
+  {
+    "platform": "codeforces",
+    "id": "122A",
+    "title": "Lucky Division",
+    "slug": null,
+    "url": "https://codeforces.com/problemset/problem/122/A",
+    "difficulty": 1000,
+    "tags": [
+      "brute force",
+      "number theory"
+    ],
+    "pattern": "Math",
+    "key_idea": "Hard-code the 14 lucky numbers up to 1000 and check whether any of them divides n.",
+    "time": "O(1)",
+    "space": "O(1)",
+    "language": "C++",
+    "path": "Codeforces_Problems/ProblemSet/122A.cpp"
+  },
+  {
+    "platform": "codeforces",
+    "id": "189A",
+    "title": "Cut Ribbon",
+    "slug": null,
+    "url": "https://codeforces.com/problemset/problem/189/A",
+    "difficulty": 1300,
+    "tags": [
+      "brute force",
+      "dp"
+    ],
+    "pattern": "Dynamic Programming",
+    "key_idea": "dp[i] = most pieces summing to i; from each reachable length, push dp[i] + 1 to i + a, b and c.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "C++",
+    "path": "Codeforces_Problems/ProblemSet/189A.cpp"
+  },
+  {
+    "platform": "codeforces",
+    "id": "230B",
+    "title": "T-primes",
+    "slug": null,
+    "url": "https://codeforces.com/problemset/problem/230/B",
+    "difficulty": 1300,
+    "tags": [
+      "binary search",
+      "implementation",
+      "math",
+      "number theory"
+    ],
+    "pattern": "Math",
+    "key_idea": "A T-prime is the square of a prime: sieve primes up to 10^6 and test whether √x is a prime integer.",
+    "time": "O(M log log M + n)",
+    "space": "O(M)",
+    "language": "C++",
+    "path": "Codeforces_Problems/ProblemSet/230B.cpp"
+  },
+  {
+    "platform": "codeforces",
+    "id": "231A",
+    "title": "Team",
+    "slug": null,
+    "url": "https://codeforces.com/problemset/problem/231/A",
+    "difficulty": 800,
+    "tags": [
+      "brute force",
+      "greedy"
+    ],
+    "pattern": "Simulation",
+    "key_idea": "Count the problems where at least two of the three friends are sure of the solution.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "C++",
+    "path": "Codeforces_Problems/ProblemSet/231A.cpp"
+  },
+  {
+    "platform": "codeforces",
+    "id": "279B",
+    "title": "Books",
+    "slug": null,
+    "url": "https://codeforces.com/problemset/problem/279/B",
+    "difficulty": 1400,
+    "tags": [
+      "binary search",
+      "brute force",
+      "implementation",
+      "two pointers"
+    ],
+    "pattern": "Sliding Window",
+    "key_idea": "Grow a window of consecutive books and shrink it from the left while its total time exceeds t; keep the longest.",
+    "time": "O(n)",
+    "space": "O(n)",
+    "language": "C++",
+    "path": "Codeforces_Problems/ProblemSet/279B.cpp"
+  },
+  {
+    "platform": "codeforces",
+    "id": "282A",
+    "title": "Bit++",
+    "slug": null,
+    "url": "https://codeforces.com/problemset/problem/282/A",
+    "difficulty": 800,
+    "tags": [
+      "implementation"
+    ],
+    "pattern": "Simulation",
+    "key_idea": "The middle character of each statement tells ++ from --; apply it to x.",
+    "time": "O(n)",
+    "space": "O(1)",
+    "language": "C++",
+    "path": "Codeforces_Problems/ProblemSet/282A.cpp"
+  },
+  {
+    "platform": "codeforces",
+    "id": "455A",
+    "title": "Boredom",
+    "slug": null,
+    "url": "https://codeforces.com/problemset/problem/455/A",
+    "difficulty": 1500,
+    "tags": [
+      "dp"
+    ],
+    "pattern": "Dynamic Programming",
+    "key_idea": "Bucket points by value; dp[i] = max(dp[i − 1], dp[i − 2] + i × count[i]), like house robber.",
+    "time": "O(n + M)",
+    "space": "O(M)",
+    "language": "C++",
+    "path": "Codeforces_Problems/ProblemSet/455A.cpp"
+  },
+  {
+    "platform": "codeforces",
+    "id": "479A",
+    "title": "Expression",
+    "slug": null,
+    "url": "https://codeforces.com/problemset/problem/479/A",
+    "difficulty": 1000,
+    "tags": [
+      "brute force",
+      "math"
+    ],
+    "pattern": "Math",
+    "key_idea": "Evaluate the candidate ways to place + and × with brackets between a, b and c, and print the largest.",
+    "time": "O(1)",
+    "space": "O(1)",
+    "language": "C++",
+    "path": "Codeforces_Problems/ProblemSet/479A.cpp"
+  }
+]
