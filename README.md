@@ -1,35 +1,30 @@
-<div align="center">
-  <img src="./leetcode-stats.svg?v=1" alt="LeetCode Note Stats" />
-</div>
+# LeetCode Patterns in Java
 
-<br>
-
-<div align="center">
-  <p><em>"The human whose code is written in this note shall pass the technical interview."</em></p>
-</div>
+LeetCode solutions in Java, plus a few Codeforces problems in C++, grouped by the technique each one uses, with the key idea and its time and space complexity on one line.
 
 <!-- counts:start -->
 **269 LeetCode** (148 Easy · 103 Medium · 18 Hard) and **16 Codeforces** solutions, organized by 21 techniques.
 <!-- counts:end -->
 
----
+<div align="center">
+  <img src="./leetcode-stats.svg?v=1" alt="LeetCode Note stats" />
+</div>
 
-### 𓂃✍︎ HOW TO USE IT
+<div align="center">
+  <p><em>"The human whose code is written in this note shall pass the technical interview."</em></p>
+</div>
 
- #### Simply solve the problems
+## How to use this repo
 
----
+- **Study one pattern at a time.** Pick a technique from the table of contents below and work down its table: read the problem, try it, then compare your approach with the key idea and the solution.
+- **Find a problem by number.** Search this page for the number with your browser's find (Ctrl+F or Cmd+F).
+- **Practise with an AI coding agent.** Point your agent at the coach skill in `skills/leetcode-coach/` and work through the problems with it.
 
-### 𓂃✍︎ THE ARSENAL
-> The instruments of execution.
+Every LeetCode solution is written the way LeetCode expects it (a `class Solution`, or the class a design problem names), so you can paste it into the LeetCode editor unchanged.
 
-* **Primary Weapon:** Java (Spring Boot)
-* **Execution Environment:** LeetCode (`easy`, `medium`, `hard`) & Codeforces
-* **Tactics:** Two-Pointer, Dynamic Programming, Topological Sort, Graph Traversal
+## The index
 
----
-
-### 𓂃✍︎ THE INDEX
+Each row links the problem number to its page on LeetCode or Codeforces and the title to the solution file. Difficulty is the platform's own rating. Time and space describe the code in the file; space is the extra memory it uses, not counting the returned output.
 
 <!-- index:start -->
 | Technique | Problems |
@@ -454,7 +449,24 @@
 
 <!-- index:end -->
 
----
-<div align="center">
-  <p><code>System.exit(0);</code></p>
-</div>
+## How solutions are checked
+
+On every push and pull request, CI compiles each Java solution against Java 21 with the imports LeetCode adds and stand-ins for LeetCode's helper classes (`ListNode`, `TreeNode`, and so on), and syntax-checks each C++ solution with g++. On pull requests and branches it also verifies that `data/problems.json`, this README and the stats card match the files in the repo. On `main`, a second workflow regenerates the index after every change to solutions, data or scripts and commits the update.
+
+## Add a solution
+
+1. Name the file `NNNN. Title.java`, for example `0070. Climbing Stairs.java`, and put it in `LeetCode_Problems/Java/easy`, `medium` or `hard`. Codeforces solutions go in `Codeforces_Problems/ProblemSet/` named by problem code, for example `4A.cpp`.
+2. Push to `main`. The index updates itself: the new problem appears under **Unsorted** with its official title, difficulty and link. For a pull request, run `python3 scripts/build_index.py --write` yourself first, because the pull request check expects the index to be up to date.
+3. Fill in `pattern`, `key_idea`, `time` and `space` for the new entry in [`data/problems.json`](data/problems.json), run `python3 scripts/build_index.py --write`, and push again.
+
+To run the same checks as CI before pushing:
+
+```sh
+python3 -m unittest discover -s scripts
+python3 scripts/build_index.py --check
+python3 scripts/compile_check.py
+```
+
+## License
+
+[MIT](LICENSE)
