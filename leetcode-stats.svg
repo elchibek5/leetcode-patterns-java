@@ -50,23 +50,23 @@
 
   <g transform="translate(40, 260)">
     <text x="0" y="0" class="typewriter" font-size="18" fill="#d40000" filter="url(#glow)">TOTAL ELIMINATED</text>
-    <text x="0" y="75" class="gothic pulse-number" font-size="85">268</text>
+    <text x="0" y="75" class="gothic pulse-number" font-size="85">269</text>
   </g>
 
   <line x1="310" y1="40" x2="310" y2="360" stroke="#1a0000" stroke-width="3" />
 
   <g transform="translate(350, 170)">
     <text x="0" y="0" class="gothic" font-size="22" fill="#a0a0a0">Casualties (Easy)</text>
-    <text x="440" y="0" class="typewriter" font-size="22" fill="#ffffff" text-anchor="end">147</text>
+    <text x="440" y="0" class="typewriter" font-size="22" fill="#ffffff" text-anchor="end">148</text>
     <rect x="0" y="15" width="440" height="10" fill="#111111" />
-    <rect class="ink-easy" x="0" y="15" width="241" height="10" fill="#008a3e" />
+    <rect class="ink-easy" x="0" y="15" width="242" height="10" fill="#008a3e" />
   </g>
 
   <g transform="translate(350, 250)">
     <text x="0" y="0" class="gothic" font-size="22" fill="#a0a0a0">Targets (Medium)</text>
     <text x="440" y="0" class="typewriter" font-size="22" fill="#ffffff" text-anchor="end">103</text>
     <rect x="0" y="15" width="440" height="10" fill="#111111" />
-    <rect class="ink-medium" x="0" y="15" width="169" height="10" fill="#d47900" />
+    <rect class="ink-medium" x="0" y="15" width="168" height="10" fill="#d47900" />
   </g>
 
   <g transform="translate(350, 330)">
