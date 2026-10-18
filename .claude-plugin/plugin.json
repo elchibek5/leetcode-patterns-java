@@ -1,0 +1,10 @@
+{
+  "name": "leetcode-coach",
+  "description": "Hints-first coach for LeetCode and Codeforces practice: graduated hints instead of answers, a review of your attempt, and related problems from an index of solved problems tagged by pattern.",
+  "version": "1.0.0",
+  "author": { "name": "Elchibek Dastanov" },
+  "homepage": "https://github.com/elchibek5/ICPC_Preperation",
+  "repository": "https://github.com/elchibek5/ICPC_Preperation",
+  "license": "MIT",
+  "keywords": ["leetcode", "algorithms", "coding-interview", "dsa", "codeforces", "skill"]
+}

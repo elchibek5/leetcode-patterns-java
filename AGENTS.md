@@ -107,6 +107,10 @@ python3 -m unittest discover -s scripts      # unit tests for the index builder
 
 If a solution uses a LeetCode helper class that has no stub yet, add it to `scripts/java-stubs/` and to `STUBS` (or, for the problem-specific `Node` classes, `NODE_VARIANTS`) in `compile_check.py`.
 
+## The coach skill
+
+`skills/leetcode-coach/SKILL.md` is a skill for people practising with an agent, shipped as a Claude Code plugin through `.claude-plugin/`. It reads `pattern`, `key_idea`, `title` and `difficulty` from `data/problems.json`, so renaming or removing those fields breaks it. Validate the plugin with `claude plugin validate .` after changing anything under `skills/` or `.claude-plugin/`.
+
 ## Rules
 
 - Never hand-edit `README.md` between `<!-- counts:start -->` and `<!-- counts:end -->` or between `<!-- index:start -->` and `<!-- index:end -->`, and never hand-edit `leetcode-stats.svg`. Change `data/problems.json` or the solution files and run `build_index.py --write`.

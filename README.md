@@ -18,7 +18,7 @@ LeetCode solutions in Java, plus a few Codeforces problems in C++, grouped by th
 
 - **Study one pattern at a time.** Pick a technique from the table of contents below and work down its table: read the problem, try it, then compare your approach with the key idea and the solution.
 - **Find a problem by number.** Search this page for the number with your browser's find (Ctrl+F or Cmd+F).
-- **Practise with an AI coding agent.** Point your agent at the coach skill in `skills/leetcode-coach/` and work through the problems with it.
+- **Practise with an AI coding agent.** Install the [coach skill](#practise-with-an-ai-coach) below: it gives hints one step at a time instead of the answer, reviews your attempt, and suggests what to solve next from this index.
 
 Every LeetCode solution is written the way LeetCode expects it (a `class Solution`, or the class a design problem names), so you can paste it into the LeetCode editor unchanged.
 
@@ -448,6 +448,32 @@ Each row links the problem number to its page on LeetCode or Codeforces and the 
 | [479A](https://codeforces.com/problemset/problem/479/A) | [Expression](Codeforces_Problems/ProblemSet/479A.cpp) | 1000 | Math | Evaluate the candidate ways to place + and × with brackets between a, b and c, and print the largest. | O(1) | O(1) |
 
 <!-- index:end -->
+
+## Practise with an AI coach
+
+[`skills/leetcode-coach`](skills/leetcode-coach/SKILL.md) is an agent skill for Claude Code, Codex and other agents that read `SKILL.md` files. Tell it which problem you are on and it coaches instead of solving:
+
+- **A hint ladder:** understand the limits and the brute force, name the pattern, the key insight, a pseudocode skeleton, and the full solution only when you ask for it. One rung per reply.
+- **A review of your attempt:** traces your code on the edge cases that matter for the problem, finds the first failing input, and states the time and space of *your* code.
+- **What to solve next:** an easier problem with the same pattern as a worked example, and two follow-ups, picked from [`data/problems.json`](data/problems.json).
+
+**Claude Code**
+
+```text
+/plugin marketplace add elchibek5/ICPC_Preperation
+/plugin install leetcode-coach@elchibek5-leetcode
+```
+
+Then ask, for example: `/leetcode-coach:leetcode-coach I'm stuck on 424, I tried brute force`.
+
+**Codex and other agents**
+
+```sh
+git clone https://github.com/elchibek5/ICPC_Preperation
+mkdir -p ~/.agents/skills && cp -r ICPC_Preperation/skills/leetcode-coach ~/.agents/skills/
+```
+
+The skill reads the index from this repo when it is installed as a plugin, and from GitHub otherwise.
 
 ## How solutions are checked
 

@@ -1,0 +1,12 @@
+{
+  "name": "elchibek5-leetcode",
+  "owner": { "name": "Elchibek Dastanov" },
+  "description": "LeetCode practice skills by Elchibek Dastanov",
+  "plugins": [
+    {
+      "name": "leetcode-coach",
+      "source": "./",
+      "description": "Hints-first coach for LeetCode and Codeforces practice."
+    }
+  ]
+}
