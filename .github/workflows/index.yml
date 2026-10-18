@@ -1,0 +1,63 @@
+name: Update index
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'LeetCode_Problems/**'
+      - 'Codeforces_Problems/**'
+      - 'data/**'
+      - 'scripts/**'
+      - 'README.md'
+      - 'leetcode-stats.svg'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: index-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  index:
+    # The bot's own "Update index" push must not start another run.
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Rebuild the index, commit and push
+        env:
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3; do
+            python3 scripts/build_index.py --write
+            python3 scripts/build_index.py --check
+            if [ -z "$(git status --porcelain)" ]; then
+              echo "Index already up to date."
+              exit 0
+            fi
+            git add -- LeetCode_Problems data README.md leetcode-stats.svg
+            git commit -m "Update index"
+            if git push origin "HEAD:$BRANCH"; then
+              exit 0
+            fi
+            echo "$BRANCH moved during the run; rebuilding on the new tip."
+            git fetch origin "$BRANCH"
+            git reset --hard "origin/$BRANCH"
+          done
+          echo "Could not push the index update after 3 attempts." >&2
+          exit 1

@@ -1,0 +1,38 @@
+name: Checks
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Unit tests
+        run: python3 -m unittest discover -s scripts
+
+      # A new solution pushed straight to main is indexed by index.yml right
+      # after, so on main the index check would only flag that gap.
+      - name: Index is up to date
+        if: github.event_name == 'pull_request' || github.ref != 'refs/heads/main'
+        run: python3 scripts/build_index.py --check
+
+      - name: Every solution compiles
+        run: python3 scripts/compile_check.py
